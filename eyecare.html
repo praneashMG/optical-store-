@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OptiCare | Optical Store & Eye Care Center</title>
+  <link rel="icon" href="assets/logo.jpg" type="image/jpeg">
+  <meta name="description" content="Premium eyewear & comprehensive eye care for your family.">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <script src="tailwind.js"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#6FCF97',
+            accent: '#4A90E2',
+            secondary: '#000000',
+            darkGrey: '#111111'
+          },
+          fontFamily: {
+            'display': ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    };
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { font-family: 'Inter', sans-serif; }
+    [dir="rtl"] .rtl-flip { transform: scaleX(-1); }
+    #mobileMenu { transition: all 0.3s ease-in-out; }
+    .eyewear-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .eyewear-card:hover { transform: translateY(-8px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.2); }
+  </style>
+</head>
+<body class="bg-white text-secondary dark:bg-secondary dark:text-gray-100 transition-colors duration-300" data-dir="ltr">
+
+  <!-- ========== NAVBAR with 7 items ========== -->
+  <nav id="navbar" class="sticky top-0 z-50 transition-colors duration-300 bg-white text-secondary border-b border-gray-100 dark:bg-secondary dark:text-white dark:border-white/10 backdrop-blur-md">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 lg:px-8">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-2 shrink-0 group">
+        <span class="flex h-10 w-10 items-center justify-center rounded-full bg-accent text-white shadow-lg group-hover:scale-110 transition-transform">
+          <i class="fas fa-eye text-lg"></i>
+        </span>
+        <div class="leading-tight">
+          <span class="block text-xl font-bold tracking-tight text-accent">OptiCare</span>
+        </div>
+      </a>
+
+      <!-- Desktop: 7 nav items -->
+      <div class="hidden lg:flex items-center gap-2">
+        <ul class="flex items-center gap-0.5 text-xs font-semibold">
+          <!-- 1. Home (dropdown) -->
+          <li class="relative group">
+            <button class="home-trigger flex items-center gap-1 rounded-md px-2.5 py-1.5 hover:text-primary dark:hover:text-accent transition-colors">
+              <span>Home</span>
+              <i class="fas fa-chevron-down text-[9px]"></i>
+            </button>
+            <ul class="invisible absolute left-0 mt-1.5 w-44 rounded-md bg-white border border-gray-100 dark:bg-secondary dark:border-white/10 p-1.5 opacity-0 shadow-xl transition-all group-hover:visible group-hover:opacity-100 z-50">
+              <li><a href="index.html" class="block rounded-md px-3 py-1.5 hover:bg-primary hover:text-white transition-colors">Home 1</a></li>
+              <li><a href="homepage2.html" class="block rounded-md px-3 py-1.5 hover:bg-primary hover:text-white transition-colors">Home 2</a></li>
+            </ul>
+          </li>
+          <!-- 2. Eyewear -->
+          <li><a href="eyewear.html" class="block rounded-md px-3 py-1.5 hover:text-primary dark:hover:text-accent transition-colors">Eyewear</a></li>
+          <!-- 3. Eye Care -->
+          <li><a href="eyecare.html" class="block rounded-md px-3 py-1.5 hover:text-primary dark:hover:text-accent transition-colors">Eye Care</a></li>
+          <!-- 4. Lenses -->
+          <li><a href="lenses.html" class="block rounded-md px-3 py-1.5 hover:text-primary dark:hover:text-accent transition-colors">Lenses</a></li>
+          <!-- 5. Brands -->
+          <li><a href="brands.html" class="block rounded-md px-3 py-1.5 hover:text-primary dark:hover:text-accent transition-colors">Brands</a></li>
+          <!-- 6. About -->
+          <li><a href="about.html" class="block rounded-md px-3 py-1.5 hover:text-primary dark:hover:text-accent transition-colors">About</a></li>
+          <!-- 7. Contact -->
+          <li><a href="contact.html" class="block rounded-md px-3 py-1.5 hover:text-primary dark:hover:text-accent transition-colors">Contact</a></li>
+        </ul>
+
+        <div class="ml-4 flex items-center gap-3 border-l border-gray-200 dark:border-white/10 pl-4">
+          <button id="themeToggleDesktop" class="flex h-9 w-9 items-center justify-center rounded-full border border-gray-300 dark:border-white/10 hover:bg-primary hover:text-white transition-all">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button id="rtlToggleDesktop" class="flex h-9 w-9 items-center justify-center rounded-full border border-gray-300 dark:border-white/10 hover:bg-primary hover:text-white transition-all">
+            <i class="fas fa-exchange-alt"></i>
+          </button>
+          <div class="ml-2 flex items-center gap-2">
+            <a href="login.html" class="inline-flex items-center gap-1.5 rounded-md border border-accent text-accent px-3 py-1.5 text-xs font-semibold hover:bg-accent hover:text-white transition-all active:scale-95">
+              <i class="fas fa-sign-in-alt text-[10px]"></i><span>Login</span>
+            </a>
+            <a href="signup.html" class="inline-flex items-center gap-1.5 rounded-md bg-accent px-3 py-1.5 text-xs font-semibold text-white hover:opacity-90 transition-transform active:scale-95 shadow-md shadow-accent/20">
+              <i class="fas fa-user-plus text-[10px]"></i><span>Register</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile hamburger -->
+      <div class="flex items-center gap-3 lg:hidden">
+        <button id="themeToggleMobile" class="flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 dark:border-white/10">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button id="hamburger" class="flex h-10 w-10 flex-col items-center justify-center gap-1.5 rounded-md bg-gray-100 dark:bg-white/5" aria-label="Toggle Menu">
+          <span id="line1" class="h-0.5 w-6 bg-current transition-all duration-300"></span>
+          <span id="line2" class="h-0.5 w-6 bg-current transition-all duration-300"></span>
+          <span id="line3" class="h-0.5 w-6 bg-current transition-all duration-300"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu with 7 items -->
+    <div id="mobileMenu" class="hidden border-t border-gray-100 bg-white dark:bg-secondary dark:border-white/5 lg:hidden overflow-hidden transition-all duration-300">
+      <div class="flex flex-col gap-1 p-4">
+        <!-- 1. Home dropdown -->
+        <details class="group">
+          <summary class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-3 text-lg font-bold list-none hover:bg-gray-50 dark:hover:bg-white/5">
+            <div class="flex items-center gap-4"><i class="fas fa-home w-6 text-accent"></i><span>Home</span></div>
+            <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <div class="mt-1 flex flex-col gap-1 pl-14 text-gray-500 dark:text-gray-400">
+            <a href="index.html" class="block rounded-lg px-4 py-2 hover:text-accent transition-colors">Home 1</a>
+            <a href="homepage2.html" class="block rounded-lg px-4 py-2 hover:text-accent transition-colors">Home 2</a>
+          </div>
+        </details>
+        <!-- 2. Eyewear -->
+        <a href="eyewear.html" class="block items-center gap-4 rounded-lg px-4 py-3 text-lg font-medium hover:bg-gray-50 dark:hover:bg-white/5">
+          <i class="fas fa-glasses text-accent w-6"></i> Eyewear
+        </a>
+        <!-- 3. Eye Care -->
+        <a href="eyecare.html" class="block items-center gap-4 rounded-lg px-4 py-3 text-lg font-medium hover:bg-gray-50 dark:hover:bg-white/5">
+          <i class="fas fa-stethoscope text-accent w-6"></i> Eye Care
+        </a>
+        <!-- 4. Lenses -->
+        <a href="lenses.html" class="block items-center gap-4 rounded-lg px-4 py-3 text-lg font-medium hover:bg-gray-50 dark:hover:bg-white/5">
+          <i class="fas fa-sun text-accent w-6"></i> Lenses
+        </a>
+        <!-- 5. Brands -->
+        <a href="brands.html" class="block items-center gap-4 rounded-lg px-4 py-3 text-lg font-medium hover:bg-gray-50 dark:hover:bg-white/5">
+          <i class="fas fa-tag text-accent w-6"></i> Brands
+        </a>
+        <!-- 6. About -->
+        <a href="about.html" class="block items-center gap-4 rounded-lg px-4 py-3 text-lg font-medium hover:bg-gray-50 dark:hover:bg-white/5">
+          <i class="fas fa-info-circle text-accent w-6"></i> About
+        </a>
+        <!-- 7. Contact -->
+        <a href="contact.html" class="flex items-center gap-4 rounded-lg px-4 py-3 text-lg font-medium hover:bg-gray-50 dark:hover:bg-white/5">
+          <i class="fas fa-envelope text-accent w-6"></i> Contact
+        </a>
+
+        <div class="mt-4 pt-4 border-t border-gray-100 dark:border-white/10">
+          <button id="rtlToggleMobile" class="flex w-full items-center gap-4 rounded-lg px-4 py-3 text-lg font-medium hover:bg-gray-50 dark:hover:bg-white/5">
+            <i class="fas fa-exchange-alt text-accent w-6"></i> Switch Direction
+          </button>
+          <div class="mt-4 flex gap-3">
+            <a href="login.html" class="flex-1 flex items-center justify-center gap-2 rounded-lg border border-antiqueGold py-4 text-lg font-bold text-antiqueGold hover:bg-antiqueGold hover:text-blackMain transition-all">
+              <i class="fas fa-right-to-bracket"></i> Login
+            </a>
+            <a href="signup.html" class="flex-1 flex items-center justify-center gap-2 rounded-lg bg-accent py-4 text-lg font-bold text-white hover:opacity-90 transition-all">
+              <i class="fas fa-user-plus"></i> SignUp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="min-h-screen">
+  <!-- ======== HERO - EYE CARE CENTER ======== -->
+<section class="relative min-h-[650px] flex items-center overflow-hidden">
+  <div class="absolute inset-0">
+    <img src="/assets/f3.avif" alt="Eye Care Center" class="h-full w-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-r from-secondary/95 via-secondary/80 to-secondary/40"></div>
+  </div>
+  <div class="absolute inset-0 opacity-20">
+    <div class="absolute top-20 right-20 h-64 w-64 rounded-full bg-accent blur-3xl"></div>
+    <div class="absolute bottom-20 left-20 h-64 w-64 rounded-full bg-primary blur-3xl"></div>
+  </div>
+  <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full py-20">
+    <div class="max-w-3xl">
+      <div class="inline-flex items-center rounded-full bg-accent/20 backdrop-blur-sm px-5 py-2 text-sm font-medium text-white border border-white/20">
+        <i class="fas fa-heartbeat mr-2 text-accent"></i>
+        <span>Your Trusted Eye Care Center</span>
+      </div>
+      <h1 class="mt-6 text-5xl font-bold text-white sm:text-6xl lg:text-7xl leading-tight">
+        Expert <span class="text-accent">Eye Care</span> <br>for the Whole Family
+      </h1>
+      <p class="mt-6 text-xl text-gray-200 max-w-2xl">
+        From routine checkups to advanced surgical care — experience world-class eye care at our state-of-the-art Optical Store & Eye Care Center.
+      </p>
+      <div class="mt-10 flex flex-wrap gap-4">
+        <a href="#" class="group inline-flex items-center rounded-full bg-accent px-8 py-4 font-semibold text-white shadow-lg shadow-accent/30 transition hover:bg-accent/90 hover:scale-105">
+          <i class="fas fa-calendar-check mr-2"></i> Book Appointment
+          <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i>
+        </a>
+        <a href="#" class="inline-flex items-center rounded-full bg-white/10 backdrop-blur-sm px-8 py-4 font-semibold text-white border border-white/20 transition hover:bg-white/20">
+          <i class="fas fa-phone mr-2"></i> (800) 555-2020
+        </a>
+      </div>
+      <div class="mt-10 flex items-center gap-8">
+        <div class="flex -space-x-3">
+          <img src="/assets/m1.jpg" class="h-12 w-12 rounded-full border-2 border-white object-cover">
+          <img src="/assets/m2.jpg" class="h-12 w-12 rounded-full border-2 border-white object-cover">
+          <img src="/assets/m3.jpeg" class="h-12 w-12 rounded-full border-2 border-white object-cover">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full border-2 border-white bg-accent text-white font-bold text-sm">500+</div>
+        </div>
+        <div class="text-white/80">
+          <span class="block font-bold text-white text-lg">Trusted by thousands</span>
+          <span class="text-sm">5-star rated Eye Care Center</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======== SERVICES - EYE CARE SERVICES ======== -->
+<section class="bg-gray-50 py-20 dark:bg-secondary" id="services">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="text-center">
+      <span class="inline-block text-sm font-semibold text-accent uppercase tracking-wider border-b-2 border-accent pb-1">Our Services</span>
+      <h2 class="mt-4 text-4xl font-bold text-secondary dark:text-white">Comprehensive <span class="text-accent">Eye Care</span> Services</h2>
+      <p class="mx-auto mt-4 max-w-2xl text-gray-500 dark:text-gray-400">Complete optical store & eye care solutions under one roof</p>
+    </div>
+    <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="group relative overflow-hidden rounded-2xl bg-white p-8 shadow-lg transition hover:shadow-2xl dark:bg-secondary/80">
+        <div class="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-accent/5 group-hover:bg-accent/10 transition"></div>
+        <div class="relative">
+          <div class="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-accent/10 text-accent group-hover:bg-accent group-hover:text-white transition">
+            <i class="fas fa-eye text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-secondary dark:text-white">Comprehensive Eye Exam</h3>
+          <p class="mt-2 text-gray-500 dark:text-gray-400">Digital refraction, glaucoma screening, retinal imaging & more.</p>
+          <a href="#" class="mt-4 inline-flex items-center text-sm font-semibold text-accent group-hover:translate-x-2 transition">
+            Learn More <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+      <div class="group relative overflow-hidden rounded-2xl bg-white p-8 shadow-lg transition hover:shadow-2xl dark:bg-secondary/80">
+        <div class="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-accent/5 group-hover:bg-accent/10 transition"></div>
+        <div class="relative">
+          <div class="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-accent/10 text-accent group-hover:bg-accent group-hover:text-white transition">
+            <i class="fas fa-syringe text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-secondary dark:text-white">Cataract Surgery</h3>
+          <p class="mt-2 text-gray-500 dark:text-gray-400">Advanced cataract removal with premium intraocular lens implants.</p>
+          <a href="#" class="mt-4 inline-flex items-center text-sm font-semibold text-accent group-hover:translate-x-2 transition">
+            Learn More <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+      <div class="group relative overflow-hidden rounded-2xl bg-white p-8 shadow-lg transition hover:shadow-2xl dark:bg-secondary/80">
+        <div class="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-accent/5 group-hover:bg-accent/10 transition"></div>
+        <div class="relative">
+          <div class="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-accent/10 text-accent group-hover:bg-accent group-hover:text-white transition">
+            <i class="fas fa-glasses text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-secondary dark:text-white">Prescription Eyewear</h3>
+          <p class="mt-2 text-gray-500 dark:text-gray-400">Designer frames, transition lenses, blue-light filtering & more.</p>
+          <a href="#" class="mt-4 inline-flex items-center text-sm font-semibold text-accent group-hover:translate-x-2 transition">
+            Learn More <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+      <div class="group relative overflow-hidden rounded-2xl bg-white p-8 shadow-lg transition hover:shadow-2xl dark:bg-secondary/80">
+        <div class="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-accent/5 group-hover:bg-accent/10 transition"></div>
+        <div class="relative">
+          <div class="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-accent/10 text-accent group-hover:bg-accent group-hover:text-white transition">
+            <i class="fas fa-child text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-secondary dark:text-white">Pediatric Eye Care</h3>
+          <p class="mt-2 text-gray-500 dark:text-gray-400">Specialized exams, myopia management & vision therapy for kids.</p>
+          <a href="#" class="mt-4 inline-flex items-center text-sm font-semibold text-accent group-hover:translate-x-2 transition">
+            Learn More <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+      <div class="group relative overflow-hidden rounded-2xl bg-white p-8 shadow-lg transition hover:shadow-2xl dark:bg-secondary/80">
+        <div class="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-accent/5 group-hover:bg-accent/10 transition"></div>
+        <div class="relative">
+          <div class="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-accent/10 text-accent group-hover:bg-accent group-hover:text-white transition">
+            <i class="fas fa-prescription-bottle text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-secondary dark:text-white">Contact Lenses</h3>
+          <p class="mt-2 text-gray-500 dark:text-gray-400">Daily, monthly, toric & specialized lenses with fitting consultation.</p>
+          <a href="#" class="mt-4 inline-flex items-center text-sm font-semibold text-accent group-hover:translate-x-2 transition">
+            Learn More <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+      <div class="group relative overflow-hidden rounded-2xl bg-white p-8 shadow-lg transition hover:shadow-2xl dark:bg-secondary/80">
+        <div class="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-accent/5 group-hover:bg-accent/10 transition"></div>
+        <div class="relative">
+          <div class="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-accent/10 text-accent group-hover:bg-accent group-hover:text-white transition">
+            <i class="fas fa-sun text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-secondary dark:text-white">Laser Vision Correction</h3>
+          <p class="mt-2 text-gray-500 dark:text-gray-400">LASIK, PRK & SMILE procedures with advanced technology.</p>
+          <a href="#" class="mt-4 inline-flex items-center text-sm font-semibold text-accent group-hover:translate-x-2 transition">
+            Learn More <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======== ABOUT - WHY CHOOSE US ======== -->
+<section class="bg-white dark:bg-darkGrey py-20" id="about">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="grid items-center gap-12 lg:grid-cols-2">
+      <div class="order-2 lg:order-1">
+        <span class="inline-block rounded-full bg-accent/20 px-4 py-1 text-sm font-semibold text-accent">Why Choose Us</span>
+        <h2 class="mt-4 text-4xl font-bold text-secondary dark:text-white">Your Vision is Our <span class="text-accent">Priority</span></h2>
+        <p class="mt-4 text-gray-500 dark:text-gray-400">
+          At OptiCare Eye Care Center, we combine cutting-edge technology with compassionate care. Our team of experienced optometrists and ophthalmologists is dedicated to preserving and enhancing your vision.
+        </p>
+        <div class="mt-8 space-y-4">
+          <div class="flex items-center gap-4 rounded-xl bg-gray-50 p-4 transition hover:bg-accent/5 dark:bg-secondary/80">
+            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent">
+              <i class="fas fa-flask text-lg"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-secondary dark:text-white">Advanced Technology</h4>
+              <p class="text-sm text-gray-500 dark:text-gray-400">State-of-the-art diagnostic equipment</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 rounded-xl bg-gray-50 p-4 transition hover:bg-accent/5 dark:bg-secondary/80">
+            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent">
+              <i class="fas fa-user-md text-lg"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-secondary dark:text-white">Expert Team</h4>
+              <p class="text-sm text-gray-500 dark:text-gray-400">Board-certified specialists</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 rounded-xl bg-gray-50 p-4 transition hover:bg-accent/5 dark:bg-secondary/80">
+            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent">
+              <i class="fas fa-heart text-lg"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-secondary dark:text-white">Compassionate Care</h4>
+              <p class="text-sm text-gray-500 dark:text-gray-400">Personalized attention for every patient</p>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="mt-8 inline-flex items-center rounded-full bg-accent px-8 py-3.5 font-semibold text-white shadow-lg shadow-accent/30 transition hover:bg-accent/90">
+          <i class="fas fa-info-circle mr-2"></i> Learn More About Us
+        </a>
+      </div>
+      <div class="order-1 lg:order-2 relative">
+        <img src="/assets/e1.webp" alt="Eye Care Center" class="rounded-2xl shadow-2xl object-cover w-full h-[500px]">
+        <div class="absolute -bottom-6 -left-6 rounded-2xl bg-accent p-6 shadow-2xl">
+          <div class="flex items-center gap-4 text-white">
+            <i class="fas fa-stethoscope text-3xl"></i>
+            <div>
+              <div class="text-2xl font-bold">15+</div>
+              <div class="text-sm opacity-90">Years of Excellence</div>
+            </div>
+          </div>
+        </div>
+        <div class="absolute -top-6 -right-6 rounded-2xl bg-white p-4 shadow-2xl dark:bg-secondary">
+          <div class="flex items-center gap-2">
+            <i class="fas fa-star text-accent"></i>
+            <span class="font-bold text-secondary dark:text-white">4.9/5</span>
+            <span class="text-sm text-gray-400">(500+ reviews)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======== SPECIALISTS - OUR DOCTORS ======== -->
+<section class="bg-gradient-to-br from-accent/5 to-primary/5 py-20 dark:bg-secondary" id="specialists">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="text-center">
+      <span class="inline-block text-sm font-semibold text-accent uppercase tracking-wider border-b-2 border-accent pb-1">Our Specialists</span>
+      <h2 class="mt-4 text-4xl font-bold text-secondary dark:text-white">Meet Our <span class="text-accent">Eye Care Experts</span></h2>
+      <p class="mx-auto mt-4 max-w-2xl text-gray-500 dark:text-gray-400">Dedicated professionals committed to your eye health</p>
+    </div>
+    <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="group text-center">
+        <div class="relative mx-auto h-48 w-48 overflow-hidden rounded-full ring-4 ring-accent/20 transition group-hover:ring-accent">
+          <img src="/assets/r4.jpg" alt="Doctor" class="h-full w-full object-cover transition group-hover:scale-110">
+        </div>
+        <h3 class="mt-4 text-xl font-bold text-secondary dark:text-white">Dr. Sarah Johnson</h3>
+        <p class="text-sm text-accent font-semibold">Chief Optometrist</p>
+        <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">15 years of experience</p>
+        <div class="mt-3 flex justify-center gap-2">
+          <a href="#" class="h-8 w-8 rounded-full bg-accent/10 flex items-center justify-center text-accent hover:bg-accent hover:text-white transition"><i class="fab fa-linkedin-in text-xs"></i></a>
+          <a href="#" class="h-8 w-8 rounded-full bg-accent/10 flex items-center justify-center text-accent hover:bg-accent hover:text-white transition"><i class="fab fa-twitter text-xs"></i></a>
+        </div>
+      </div>
+      <div class="group text-center">
+        <div class="relative mx-auto h-48 w-48 overflow-hidden rounded-full ring-4 ring-accent/20 transition group-hover:ring-accent">
+          <img src="/assets/r5.webp" alt="Doctor" class="h-full w-full object-cover transition group-hover:scale-110">
+        </div>
+        <h3 class="mt-4 text-xl font-bold text-secondary dark:text-white">Dr. Michael Chen</h3>
+        <p class="text-sm text-accent font-semibold">Ophthalmologist</p>
+        <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">LASIK & cataract specialist</p>
+        <div class="mt-3 flex justify-center gap-2">
+          <a href="#" class="h-8 w-8 rounded-full bg-accent/10 flex items-center justify-center text-accent hover:bg-accent hover:text-white transition"><i class="fab fa-linkedin-in text-xs"></i></a>
+          <a href="#" class="h-8 w-8 rounded-full bg-accent/10 flex items-center justify-center text-accent hover:bg-accent hover:text-white transition"><i class="fab fa-twitter text-xs"></i></a>
+        </div>
+      </div>
+      <div class="group text-center">
+        <div class="relative mx-auto h-48 w-48 overflow-hidden rounded-full ring-4 ring-accent/20 transition group-hover:ring-accent">
+          <img src="/assets/r2.jpg  " alt="Doctor" class="h-full w-full object-cover transition group-hover:scale-110">
+        </div>
+        <h3 class="mt-4 text-xl font-bold text-secondary dark:text-white">Dr. Emily Rodriguez</h3>
+        <p class="text-sm text-accent font-semibold">Pediatric Specialist</p>
+        <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Children's vision expert</p>
+        <div class="mt-3 flex justify-center gap-2">
+          <a href="#" class="h-8 w-8 rounded-full bg-accent/10 flex items-center justify-center text-accent hover:bg-accent hover:text-white transition"><i class="fab fa-linkedin-in text-xs"></i></a>
+          <a href="#" class="h-8 w-8 rounded-full bg-accent/10 flex items-center justify-center text-accent hover:bg-accent hover:text-white transition"><i class="fab fa-twitter text-xs"></i></a>
+        </div>
+      </div>
+      <div class="group text-center">
+        <div class="relative mx-auto h-48 w-48 overflow-hidden rounded-full ring-4 ring-accent/20 transition group-hover:ring-accent">
+          <img src="/assets/r3.jpg" alt="Doctor" class="h-full w-full object-cover transition group-hover:scale-110">
+        </div>
+        <h3 class="mt-4 text-xl font-bold text-secondary dark:text-white">Dr. James Wilson</h3>
+        <p class="text-sm text-accent font-semibold">Optometrist</p>
+        <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Contact lens specialist</p>
+        <div class="mt-3 flex justify-center gap-2">
+          <a href="#" class="h-8 w-8 rounded-full bg-accent/10 flex items-center justify-center text-accent hover:bg-accent hover:text-white transition"><i class="fab fa-linkedin-in text-xs"></i></a>
+          <a href="#" class="h-8 w-8 rounded-full bg-accent/10 flex items-center justify-center text-accent hover:bg-accent hover:text-white transition"><i class="fab fa-twitter text-xs"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======== TESTIMONIALS - PATIENT STORIES ======== -->
+<section class="bg-white dark:bg-secondary py-20" id="testimonials">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="flex items-end justify-between">
+      <div>
+        <span class="inline-block text-sm font-semibold text-accent uppercase tracking-wider border-b-2 border-accent pb-1">Testimonials</span>
+        <h2 class="mt-4 text-4xl font-bold text-secondary dark:text-white">What Our <span class="text-accent">Patients</span> Say</h2>
+        <p class="mt-2 text-gray-500 dark:text-gray-400">Real stories from real people at our Eye Care Center</p>
+      </div>
+      <a href="#" class="hidden rounded-full border border-accent px-6 py-2 text-sm font-semibold text-accent transition hover:bg-accent hover:text-white sm:inline-flex">See All →</a>
+    </div>
+    <div class="mt-12 grid gap-6 md:grid-cols-3">
+      <div class="rounded-2xl bg-gray-50 p-8 shadow-lg transition hover:shadow-2xl dark:bg-secondary/80">
+        <div class="flex items-center gap-1 text-accent">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="mt-4 text-gray-600 dark:text-gray-300">"The LASIK procedure was life-changing. The team was professional and caring throughout the entire process."</p>
+        <div class="mt-6 flex items-center gap-3">
+          <img src="/assets/m1.jpg" class="h-12 w-12 rounded-full object-cover">
+          <div>
+            <div class="font-bold text-secondary dark:text-white">Amanda Lee</div>
+            <div class="text-sm text-gray-400">Marketing Director</div>
+          </div>
+        </div>
+      </div>
+      <div class="rounded-2xl bg-gray-50 p-8 shadow-lg transition hover:shadow-2xl dark:bg-secondary/80 ring-2 ring-accent relative">
+        <div class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-accent px-4 py-1 text-xs font-bold text-white">Featured</div>
+        <div class="flex items-center gap-1 text-accent">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="mt-4 text-gray-600 dark:text-gray-300">"My daughter's myopia is now under control thanks to their pediatric program. The staff is amazing with kids!"</p>
+        <div class="mt-6 flex items-center gap-3">
+          <img src="/assets/m2.jpg" class="h-12 w-12 rounded-full object-cover">
+          <div>
+            <div class="font-bold text-secondary dark:text-white">Robert Chen</div>
+            <div class="text-sm text-gray-400">Father of two</div>
+          </div>
+        </div>
+      </div>
+      <div class="rounded-2xl bg-gray-50 p-8 shadow-lg transition hover:shadow-2xl dark:bg-secondary/80">
+        <div class="flex items-center gap-1 text-accent">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="mt-4 text-gray-600 dark:text-gray-300">"Cataract surgery was smooth and painless. I can see clearly for the first time in years. Highly recommend this Eye Care Center."</p>
+        <div class="mt-6 flex items-center gap-3">
+          <img src="/assets/m3.jpeg" class="h-12 w-12 rounded-full object-cover">
+          <div>
+            <div class="font-bold text-secondary dark:text-white">David Thompson</div>
+            <div class="text-sm text-gray-400">Retired Teacher</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======== CONTACT - BOOK APPOINTMENT ======== -->
+<section class="bg-gradient-to-br from-accent/5 to-primary/5 py-20 dark:bg-darkGrey" id="contact">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="grid items-center gap-12 lg:grid-cols-5">
+      <div class="lg:col-span-2">
+        <span class="inline-block text-sm font-semibold text-accent uppercase tracking-wider border-b-2 border-accent pb-1">Contact Us</span>
+        <h2 class="mt-4 text-4xl font-bold text-secondary dark:text-white">Book Your <span class="text-accent">Appointment</span> Today</h2>
+        <p class="mt-4 text-gray-500 dark:text-gray-400">Visit our Optical Store & Eye Care Center or schedule online. We're here to help you see clearly.</p>
+        <div class="mt-8 space-y-4">
+          <div class="flex items-center gap-4 rounded-xl bg-white p-4 shadow-sm dark:bg-secondary/80">
+            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent">
+              <i class="fas fa-map-marker-alt text-lg"></i>
+            </div>
+            <div>
+              <div class="font-semibold text-secondary dark:text-white">Location</div>
+              <div class="text-sm text-gray-500 dark:text-gray-400">123 Vision St, Eye City, EC 10001</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 rounded-xl bg-white p-4 shadow-sm dark:bg-secondary/80">
+            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent">
+              <i class="fas fa-phone text-lg"></i>
+            </div>
+            <div>
+              <div class="font-semibold text-secondary dark:text-white">Phone</div>
+              <div class="text-sm text-gray-500 dark:text-gray-400">+1 (800) 555-2020</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 rounded-xl bg-white p-4 shadow-sm dark:bg-secondary/80">
+            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent">
+              <i class="fas fa-envelope text-lg"></i>
+            </div>
+            <div>
+              <div class="font-semibold text-secondary dark:text-white">Email</div>
+              <div class="text-sm text-gray-500 dark:text-gray-400">info@opticare.com</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 rounded-xl bg-white p-4 shadow-sm dark:bg-secondary/80">
+            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent">
+              <i class="fas fa-clock text-lg"></i>
+            </div>
+            <div>
+              <div class="font-semibold text-secondary dark:text-white">Hours</div>
+              <div class="text-sm text-gray-500 dark:text-gray-400">Mon–Sat: 9:00 AM – 7:00 PM | Sun: Closed</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lg:col-span-3 rounded-3xl bg-white p-8 shadow-2xl dark:bg-secondary/80">
+        <h3 class="text-2xl font-bold text-secondary dark:text-white">Schedule an Appointment</h3>
+        <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Fill in the details and we'll confirm your appointment</p>
+        <form class="mt-6 space-y-4">
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div>
+              <label class="mb-1 block text-sm font-medium text-gray-600 dark:text-gray-300">First Name</label>
+              <input type="text" placeholder="First name" class="w-full rounded-xl border border-gray-200 px-4 py-3 focus:border-accent focus:outline-none dark:border-white/10 dark:bg-secondary dark:text-white">
+            </div>
+            <div>
+              <label class="mb-1 block text-sm font-medium text-gray-600 dark:text-gray-300">Last Name</label>
+              <input type="text" placeholder="Last name" class="w-full rounded-xl border border-gray-200 px-4 py-3 focus:border-accent focus:outline-none dark:border-white/10 dark:bg-secondary dark:text-white">
+            </div>
+          </div>
+          <div>
+            <label class="mb-1 block text-sm font-medium text-gray-600 dark:text-gray-300">Email Address</label>
+            <input type="email" placeholder="Enter your email" class="w-full rounded-xl border border-gray-200 px-4 py-3 focus:border-accent focus:outline-none dark:border-white/10 dark:bg-secondary dark:text-white">
+          </div>
+          <div>
+            <label class="mb-1 block text-sm font-medium text-gray-600 dark:text-gray-300">Phone Number</label>
+            <input type="tel" placeholder="Enter your phone" class="w-full rounded-xl border border-gray-200 px-4 py-3 focus:border-accent focus:outline-none dark:border-white/10 dark:bg-secondary dark:text-white">
+          </div>
+          <div>
+            <label class="mb-1 block text-sm font-medium text-gray-600 dark:text-gray-300">Service Needed</label>
+            <select class="w-full rounded-xl border border-gray-200 px-4 py-3 focus:border-accent focus:outline-none dark:border-white/10 dark:bg-secondary dark:text-white">
+              <option>Comprehensive Eye Exam</option>
+              <option>LASIK Consultation</option>
+              <option>Cataract Surgery</option>
+              <option>Pediatric Eye Care</option>
+              <option>Contact Lenses</option>
+              <option>Prescription Eyewear</option>
+            </select>
+          </div>
+          <div>
+            <label class="mb-1 block text-sm font-medium text-gray-600 dark:text-gray-300">Preferred Date</label>
+            <input type="date" class="w-full rounded-xl border border-gray-200 px-4 py-3 focus:border-accent focus:outline-none dark:border-white/10 dark:bg-secondary dark:text-white">
+          </div>
+          <button type="submit" class="w-full rounded-xl bg-accent py-3.5 font-semibold text-white transition hover:bg-accent/90">
+            <i class="fas fa-calendar-check mr-2"></i> Book Appointment
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="bg-secondary pt-20 pb-10 text-white">
+    <div class="mx-auto max-w-7xl px-4 lg:px-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 border-b border-white/10 pb-16">
+        <div>
+          <a href="index.html" class="flex items-center gap-3 mb-6">
+            <span class="flex h-10 w-10 items-center justify-center rounded-full bg-accent text-white shadow-lg">
+              <i class="fas fa-eye text-lg"></i>
+            </span>
+            <div class="leading-tight">
+              <span class="block text-xl font-bold tracking-tight text-accent">OptiCare</span>
+            </div>
+          </a>
+          <p class="text-gray-400 mb-6">Caring for your eyes with precision and style. Premium eyewear and comprehensive eye care.</p>
+          <div class="flex gap-3">
+            <a href="#" class="h-10 w-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-accent hover:text-secondary transition-all"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="h-10 w-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-accent hover:text-secondary transition-all"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="h-10 w-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-accent hover:text-secondary transition-all"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-6 uppercase tracking-wider text-sm">Quick links</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="index.html" class="block hover:text-accent transition-colors">Home</a></li>
+            <li><a href="#eyewear" class="block hover:text-accent transition-colors">Eyewear</a></li>
+            <li><a href="#eyecare" class="block hover:text-accent transition-colors">Eye Care</a></li>
+            <li><a href="#lenses" class="block hover:text-accent transition-colors">Lenses</a></li>
+            <li><a href="#brands" class="block hover:text-accent transition-colors">Brands</a></li>
+            <li><a href="#about" class="block hover:text-accent transition-colors">About</a></li>
+            <li><a href="#contact" class="block hover:text-accent transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-6">Visit us</h4>
+          <div class="space-y-4">
+            <div class="flex items-center gap-3">
+              <div class="h-10 w-10 rounded-full bg-accent/10 flex items-center justify-center">
+                <i class="fas fa-map-marker-alt text-accent"></i>
+              </div>
+              <div class="text-gray-400">123 Vision St, Eye City</div>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="h-10 w-10 rounded-full bg-accent/10 flex items-center justify-center">
+                <i class="fas fa-phone text-accent"></i>
+              </div>
+              <div class="text-gray-400">+1 (800) 555-2020</div>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="h-10 w-10 rounded-full bg-accent/10 flex items-center justify-center">
+                <i class="fas fa-envelope text-accent"></i>
+              </div>
+              <div class="text-gray-400">info@opticare.com</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-6">Eye health tips</h4>
+          <p class="text-gray-400 mb-4">Get the latest on eye care and frame trends.</p>
+          <form class="space-y-4">
+            <input type="email" placeholder="Email address" class="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 focus:border-accent focus:outline-none text-white">
+            <button type="submit" class="w-full bg-accent text-white font-bold py-3 rounded-lg hover:opacity-90 transition-colors">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500 text-sm">
+        <div>© 2026 OptiCare Optical & Eye Care. All rights reserved.</div>
+        <div class="flex gap-6">
+          <a href="#" class="hover:text-accent transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-accent transition-colors">Terms of Service</a>
+          <a href="#" class="hover:text-accent transition-colors">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const htmlEl = document.documentElement;
+    const bodyEl = document.body;
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const l1 = document.getElementById('line1');
+    const l2 = document.getElementById('line2');
+    const l3 = document.getElementById('line3');
+
+    hamburger.addEventListener('click', () => {
+      const isHidden = mobileMenu.classList.toggle('hidden');
+      if (!isHidden) {
+        l1.style.transform = 'translateY(8px) rotate(45deg)';
+        l2.style.opacity = '0';
+        l3.style.transform = 'translateY(-8px) rotate(-45deg)';
+      } else {
+        l1.style.transform = 'none';
+        l2.style.opacity = '1';
+        l3.style.transform = 'none';
+      }
+    });
+
+    const themeBtns = [document.getElementById('themeToggleDesktop'), document.getElementById('themeToggleMobile')];
+    function setTheme(isDark) {
+      if (isDark) {
+        htmlEl.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+        themeBtns.forEach(btn => btn.innerHTML = '<i class="fas fa-sun"></i>');
+      } else {
+        htmlEl.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+        themeBtns.forEach(btn => btn.innerHTML = '<i class="fas fa-moon"></i>');
+      }
+    }
+    themeBtns.forEach(btn => btn.addEventListener('click', () => setTheme(!htmlEl.classList.contains('dark'))));
+    setTheme(localStorage.getItem('theme') === 'dark' || window.matchMedia('(prefers-color-scheme: dark)').matches);
+
+    const rtlBtns = [document.getElementById('rtlToggleDesktop'), document.getElementById('rtlToggleMobile')];
+    rtlBtns.forEach(btn => btn.addEventListener('click', () => {
+      const currentDir = bodyEl.getAttribute('dir') || 'ltr';
+      bodyEl.setAttribute('dir', currentDir === 'ltr' ? 'rtl' : 'ltr');
+    }));
+  </script>
+
+  <script>
+    // Active Nav Link Script
+    (function() {
+      const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+      const isHome = currentPath === 'index.html' || currentPath === 'homepage2.html';
+      
+      // Desktop and Mobile Standard Links
+      const navLinks = document.querySelectorAll('#navbar a');
+      navLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        
+        // Skip some links like the logo, register, login
+        if(link.closest('.group') && link.querySelector('.fa-eye')) return; 
+        if(href === 'login.html' || href === 'signup.html') return;
+
+        if (href === currentPath) {
+          if (link.closest('#mobileMenu')) {
+            link.classList.add('bg-accent', 'text-white', 'shadow-md');
+            link.classList.remove('hover:bg-gray-50', 'dark:hover:bg-white/5');
+            const icon = link.querySelector('i');
+            if (icon) {
+               icon.classList.remove('text-accent');
+               icon.classList.add('text-white');
+            }
+          } else {
+            // Desktop active link
+            link.classList.add('bg-accent', 'text-white', 'shadow-sm', 'font-bold');
+            link.classList.remove('hover:text-primary', 'dark:hover:text-accent');
+          }
+        } else {
+          // Non-active links
+          if (!(isHome && (href === 'index.html' || href === 'homepage2.html'))) {
+             if (link.closest('#mobileMenu')) {
+                link.classList.remove('bg-accent', 'text-white', 'shadow-md');
+                // restore original styling
+                const icon = link.querySelector('i');
+                if (icon) {
+                   icon.classList.remove('text-white');
+                   icon.classList.add('text-accent');
+                }
+             } else {
+                link.classList.remove('bg-accent', 'text-white', 'shadow-sm', 'font-bold');
+             }
+          }
+        }
+      });
+      
+      // Desktop Home Trigger
+      const desktopHome = document.querySelector('.home-trigger');
+      if (desktopHome) {
+        if (!isHome) {
+          desktopHome.classList.remove('bg-accent', 'text-white', 'shadow-sm', 'font-bold');
+          desktopHome.classList.add('hover:text-primary', 'dark:hover:text-accent');
+        } else {
+          desktopHome.classList.add('bg-accent', 'text-white', 'shadow-sm', 'font-bold');
+          desktopHome.classList.remove('hover:text-primary', 'dark:hover:text-accent');
+        }
+      }
+      
+      // Mobile Home Summary
+      const mobileHome = document.querySelector('details.group summary');
+      if (mobileHome) {
+        const icon = mobileHome.querySelector('i.fa-home');
+        if (!isHome) {
+          mobileHome.classList.remove('bg-accent', 'text-white', 'shadow-md');
+          mobileHome.classList.add('hover:bg-gray-50', 'dark:hover:bg-white/5');
+          if (icon) {
+             icon.classList.add('text-accent');
+             icon.classList.remove('text-white');
+          }
+        } else {
+          mobileHome.classList.add('bg-accent', 'text-white', 'shadow-md');
+          mobileHome.classList.remove('hover:bg-gray-50', 'dark:hover:bg-white/5');
+          if (icon) {
+             icon.classList.remove('text-accent');
+             icon.classList.add('text-white');
+          }
+        }
+      }
+    })();
+  </script>
+\n</body>
+</html>

@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>OptiCare | Optical Store & Eye Care Center</title>
-  <link rel="icon" href="assets/logo.png" type="image/jpeg">
+  <link rel="icon" href="assets/logo.png" type="image/png">
   <meta name="description" content="Premium eyewear & comprehensive eye care for your family.">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
@@ -47,20 +47,20 @@
           <i class="fas fa-eye text-lg"></i>
         </span>
         <div class="leading-tight">
-          <span class="block text-xl font-bold tracking-tight text-accent">OptiCare</span>
+          <span class="block text-xl font-medium tracking-tight text-accent">OptiCare</span>
         </div>
       </a>
 
       <!-- Desktop: 7 nav items -->
       <div class="hidden lg:flex items-center gap-2">
-        <ul class="flex items-center gap-0.5 text-xs font-semibold">
+        <ul class="flex items-center gap-0.5 text-xs font-medium">
           <!-- 1. Home (dropdown) -->
           <li class="relative group">
             <button class="home-trigger flex items-center gap-1 rounded-md px-2.5 py-1.5 hover:text-primary dark:hover:text-accent transition-colors">
               <span>Home</span>
               <i class="fas fa-chevron-down text-[9px]"></i>
             </button>
-            <ul class="invisible absolute left-0 mt-1.5 w-44 rounded-md bg-white border border-gray-100 dark:bg-secondary dark:border-white/10 p-1.5 opacity-0 shadow-xl transition-all group-hover:visible group-hover:opacity-100 z-50">
+            <ul class="invisible absolute start-0 mt-1.5 w-44 rounded-md bg-white border border-gray-100 dark:bg-secondary dark:border-white/10 p-1.5 opacity-0 shadow-xl transition-all group-hover:visible group-hover:opacity-100 z-50">
               <li><a href="index.html" class="block rounded-md px-3 py-1.5 hover:bg-primary hover:text-white transition-colors">Home 1</a></li>
               <li><a href="homepage2.html" class="block rounded-md px-3 py-1.5 hover:bg-primary hover:text-white transition-colors">Home 2</a></li>
             </ul>
@@ -79,18 +79,18 @@
           <li><a href="contact.html" class="block rounded-md px-3 py-1.5 hover:text-primary dark:hover:text-accent transition-colors">Contact</a></li>
         </ul>
 
-        <div class="ml-4 flex items-center gap-3 border-l border-gray-200 dark:border-white/10 pl-4">
+        <div class="ms-4 flex items-center gap-3 border-s border-gray-200 dark:border-white/10 ps-4">
           <button id="themeToggleDesktop" class="flex h-9 w-9 items-center justify-center rounded-full border border-gray-300 dark:border-white/10 hover:bg-primary hover:text-white transition-all">
             <i class="fas fa-moon"></i>
           </button>
           <button id="rtlToggleDesktop" class="flex h-9 w-9 items-center justify-center rounded-full border border-gray-300 dark:border-white/10 hover:bg-primary hover:text-white transition-all">
             <i class="fas fa-exchange-alt"></i>
           </button>
-          <div class="ml-2 flex items-center gap-2">
-            <a href="login.html" class="inline-flex items-center gap-1.5 rounded-md border border-accent text-accent px-3 py-1.5 text-xs font-semibold hover:bg-accent hover:text-white transition-all active:scale-95">
+          <div class="ms-2 flex items-center gap-2">
+            <a href="login.html" class="inline-flex items-center gap-1.5 rounded-md border border-accent text-accent px-3 py-1.5 text-xs font-medium hover:bg-accent hover:text-white transition-all active:scale-95">
               <i class="fas fa-sign-in-alt text-[10px]"></i><span>Login</span>
             </a>
-            <a href="signup.html" class="inline-flex items-center gap-1.5 rounded-md bg-accent px-3 py-1.5 text-xs font-semibold text-white hover:opacity-90 transition-transform active:scale-95 shadow-md shadow-accent/20">
+            <a href="signup.html" class="inline-flex items-center gap-1.5 rounded-md bg-accent px-3 py-1.5 text-xs font-medium text-white hover:opacity-90 transition-transform active:scale-95 shadow-md shadow-accent/20 hover:bg-accent/90 dark:text-white">
               <i class="fas fa-user-plus text-[10px]"></i><span>Register</span>
             </a>
           </div>
@@ -115,33 +115,33 @@
       <div class="flex flex-col gap-1 p-4">
         <!-- 1. Home dropdown -->
         <details class="group">
-          <summary class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-3 text-lg font-bold list-none hover:bg-gray-50 dark:hover:bg-white/5">
+          <summary class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-3 text-lg font-medium list-none hover:bg-gray-50 dark:hover:bg-white/5">
             <div class="flex items-center gap-4"><i class="fas fa-home w-6 text-accent"></i><span>Home</span></div>
             <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition-transform"></i>
           </summary>
-          <div class="mt-1 flex flex-col gap-1 pl-14 text-gray-500 dark:text-gray-400">
+          <div class="mt-1 flex flex-col gap-1 ps-14 text-gray-500 dark:text-gray-400">
             <a href="index.html" class="block rounded-lg px-4 py-2 hover:text-accent transition-colors">Home 1</a>
             <a href="homepage2.html" class="block rounded-lg px-4 py-2 hover:text-accent transition-colors">Home 2</a>
           </div>
         </details>
         <!-- 2. Eyewear -->
-        <a href="eyewear.html" class="block items-center gap-4 rounded-lg px-4 py-3 text-lg font-medium hover:bg-gray-50 dark:hover:bg-white/5">
+        <a href="eyewear.html" class="flex items-center gap-4 rounded-lg px-4 py-3 text-lg font-medium hover:bg-gray-50 dark:hover:bg-white/5">
           <i class="fas fa-glasses text-accent w-6"></i> Eyewear
         </a>
         <!-- 3. Eye Care -->
-        <a href="eyecare.html" class="block items-center gap-4 rounded-lg px-4 py-3 text-lg font-medium hover:bg-gray-50 dark:hover:bg-white/5">
+        <a href="eyecare.html" class="flex items-center gap-4 rounded-lg px-4 py-3 text-lg font-medium hover:bg-gray-50 dark:hover:bg-white/5">
           <i class="fas fa-stethoscope text-accent w-6"></i> Eye Care
         </a>
         <!-- 4. Lenses -->
-        <a href="lenses.html" class="block items-center gap-4 rounded-lg px-4 py-3 text-lg font-medium hover:bg-gray-50 dark:hover:bg-white/5">
+        <a href="lenses.html" class="flex items-center gap-4 rounded-lg px-4 py-3 text-lg font-medium hover:bg-gray-50 dark:hover:bg-white/5">
           <i class="fas fa-sun text-accent w-6"></i> Lenses
         </a>
         <!-- 5. Brands -->
-        <a href="brands.html" class="block items-center gap-4 rounded-lg px-4 py-3 text-lg font-medium hover:bg-gray-50 dark:hover:bg-white/5">
+        <a href="brands.html" class="flex items-center gap-4 rounded-lg px-4 py-3 text-lg font-medium hover:bg-gray-50 dark:hover:bg-white/5">
           <i class="fas fa-tag text-accent w-6"></i> Brands
         </a>
         <!-- 6. About -->
-        <a href="about.html" class="block items-center gap-4 rounded-lg px-4 py-3 text-lg font-medium hover:bg-gray-50 dark:hover:bg-white/5">
+        <a href="about.html" class="flex items-center gap-4 rounded-lg px-4 py-3 text-lg font-medium hover:bg-gray-50 dark:hover:bg-white/5">
           <i class="fas fa-info-circle text-accent w-6"></i> About
         </a>
         <!-- 7. Contact -->
@@ -154,10 +154,10 @@
             <i class="fas fa-exchange-alt text-accent w-6"></i> Switch Direction
           </button>
           <div class="mt-4 flex gap-3">
-            <a href="login.html" class="flex-1 flex items-center justify-center gap-2 rounded-lg border border-antiqueGold py-4 text-lg font-bold text-antiqueGold hover:bg-antiqueGold hover:text-blackMain transition-all">
+            <a href="login.html" class="flex-1 flex items-center justify-center gap-2 rounded-lg border border-antiqueGold py-4 text-lg font-medium text-antiqueGold hover:bg-antiqueGold hover:text-blackMain transition-all">
               <i class="fas fa-right-to-bracket"></i> Login
             </a>
-            <a href="signup.html" class="flex-1 flex items-center justify-center gap-2 rounded-lg bg-accent py-4 text-lg font-bold text-white hover:opacity-90 transition-all">
+            <a href="signup.html" class="flex-1 flex items-center justify-center gap-2 rounded-lg bg-accent py-4 text-lg font-medium text-white hover:opacity-90 transition-all hover:bg-accent/90 dark:text-white">
               <i class="fas fa-user-plus"></i> SignUp
             </a>
           </div>
@@ -175,12 +175,12 @@
   </div>
   <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full py-20">
     <div class="grid items-center gap-12 lg:grid-cols-2">
-      <div class="text-left">
+      <div class="text-start">
         <div class="inline-flex items-center rounded-full bg-accent/20 backdrop-blur-sm px-5 py-2 text-sm font-medium text-accent border border-accent/20">
-          <i class="fas fa-headset mr-2"></i>
+          <i class="fas fa-headset me-2"></i>
           <span>We're Here to Help</span>
         </div>
-        <h1 class="mt-6 text-5xl font-bold text-secondary dark:text-white sm:text-6xl lg:text-7xl leading-tight">
+        <h1 class="mt-6 font-medium text-secondary dark:text-white leading-tight text-4xl sm:text-5xl lg:text-6xl">
           Get in <span class="text-accent">Touch</span>
         </h1>
         <p class="mt-6 text-lg text-gray-600 dark:text-gray-300 max-w-2xl">
@@ -210,56 +210,56 @@
   </div>
 </section>
 <!-- ======== CONTACT INFO - CARDS WITH ICONS ======== -->
-<section class="bg-white dark:bg-secondary py-20" id="info">
+<section class="bg-white dark:bg-secondary py-20 overflow-hidden" id="info">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-      <div class="group rounded-2xl bg-gray-50 p-8 text-center transition hover:shadow-2xl dark:bg-secondary/80 hover:-translate-y-2">
+      <div class="group rounded-2xl bg-gray-50 p-8 text-center transition hover:shadow-2xl dark:bg-darkGrey hover:-translate-y-2">
         <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-accent/10 text-accent group-hover:bg-accent group-hover:text-white transition">
           <i class="fas fa-map-marker-alt text-2xl"></i>
         </div>
-        <h3 class="mt-4 text-xl font-bold text-secondary dark:text-white">Visit Us</h3>
-        <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">123 Vision Street, Eye City, EC 10001</p>
-        <a href="#" class="mt-4 inline-block text-sm font-semibold text-accent group-hover:underline">Get Directions →</a>
+        <h3 class="mt-4 font-medium text-secondary dark:text-white text-2xl sm:text-3xl">Visit Us</h3>
+        <p class="mt-2 text-sm text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">123 Vision Street, Eye City, EC 10001</p>
+        <a href="#" class="mt-4 inline-block text-sm font-medium text-accent group-hover:underline">Get Directions →</a>
       </div>
-      <div class="group rounded-2xl bg-gray-50 p-8 text-center transition hover:shadow-2xl dark:bg-secondary/80 hover:-translate-y-2">
+      <div class="group rounded-2xl bg-gray-50 p-8 text-center transition hover:shadow-2xl dark:bg-darkGrey hover:-translate-y-2">
         <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-accent/10 text-accent group-hover:bg-accent group-hover:text-white transition">
           <i class="fas fa-phone text-2xl"></i>
         </div>
-        <h3 class="mt-4 text-xl font-bold text-secondary dark:text-white">Call Us</h3>
-        <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">+1 (800) 555-2020</p>
+        <h3 class="mt-4 font-medium text-secondary dark:text-white text-2xl sm:text-3xl">Call Us</h3>
+        <p class="mt-2 text-sm text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">+1 (800) 555-2020</p>
         <p class="text-xs text-gray-400">Mon–Sat: 9AM – 7PM</p>
-        <a href="#" class="mt-4 inline-block text-sm font-semibold text-accent group-hover:underline">Call Now →</a>
+        <a href="#" class="mt-4 inline-block text-sm font-medium text-accent group-hover:underline">Call Now →</a>
       </div>
-      <div class="group rounded-2xl bg-gray-50 p-8 text-center transition hover:shadow-2xl dark:bg-secondary/80 hover:-translate-y-2 ring-2 ring-accent relative">
-        <div class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-accent px-4 py-1 text-xs font-bold text-white">Popular</div>
+      <div class="group rounded-2xl bg-gray-50 p-8 text-center transition hover:shadow-2xl dark:bg-darkGrey hover:-translate-y-2 ring-2 ring-accent relative">
+        <div class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-accent px-4 py-1 text-xs font-medium text-white">Popular</div>
         <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-accent/10 text-accent group-hover:bg-accent group-hover:text-white transition">
           <i class="fas fa-envelope text-2xl"></i>
         </div>
-        <h3 class="mt-4 text-xl font-bold text-secondary dark:text-white">Email Us</h3>
-        <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">info@opticare.com</p>
+        <h3 class="mt-4 font-medium text-secondary dark:text-white text-2xl sm:text-3xl">Email Us</h3>
+        <p class="mt-2 text-sm text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">info@opticare.com</p>
         <p class="text-xs text-gray-400">Response within 24 hours</p>
-        <a href="#" class="mt-4 inline-block text-sm font-semibold text-accent group-hover:underline">Send Email →</a>
+        <a href="#" class="mt-4 inline-block text-sm font-medium text-accent group-hover:underline">Send Email →</a>
       </div>
-      <div class="group rounded-2xl bg-gray-50 p-8 text-center transition hover:shadow-2xl dark:bg-secondary/80 hover:-translate-y-2">
+      <div class="group rounded-2xl bg-gray-50 p-8 text-center transition hover:shadow-2xl dark:bg-darkGrey hover:-translate-y-2">
         <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-accent/10 text-accent group-hover:bg-accent group-hover:text-white transition">
           <i class="fas fa-clock text-2xl"></i>
         </div>
-        <h3 class="mt-4 text-xl font-bold text-secondary dark:text-white">Working Hours</h3>
-        <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Mon–Fri: 9:00 AM – 7:00 PM</p>
-        <p class="text-sm text-gray-500 dark:text-gray-400">Saturday: 9:00 AM – 5:00 PM</p>
-        <p class="text-sm text-gray-500 dark:text-gray-400">Sunday: Closed</p>
+        <h3 class="mt-4 font-medium text-secondary dark:text-white text-2xl sm:text-3xl">Working Hours</h3>
+        <p class="mt-2 text-sm text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">Mon–Fri: 9:00 AM – 7:00 PM</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">Saturday: 9:00 AM – 5:00 PM</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">Sunday: Closed</p>
       </div>
     </div>
   </div>
 </section>
 <!-- ======== CONTACT FORM - MODERN FORM WITH IMAGE ======== -->
-<section class="bg-gradient-to-br from-accent/5 to-primary/5 py-20 dark:bg-secondary" id="form">
+<section class="bg-gradient-to-br from-accent/5 to-primary/5 py-20 dark:bg-secondary overflow-hidden" id="form">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="grid items-center gap-12 lg:grid-cols-2">
       <div>
-        <span class="inline-block text-sm font-semibold text-accent uppercase tracking-wider border-b-2 border-accent pb-1">Send Message</span>
-        <h2 class="mt-4 text-4xl font-bold text-secondary dark:text-white">We'd Love to <span class="text-accent">Hear From You</span></h2>
-        <p class="mt-4 text-gray-500 dark:text-gray-400">Fill in the form and our team will get back to you within 24 hours.</p>
+        <span class="inline-block text-sm font-medium text-accent uppercase tracking-wider border-b-2 border-accent pb-1">Send Message</span>
+        <h2 class="mt-4 font-medium text-secondary dark:text-white text-3xl sm:text-4xl">We'd Love to <span class="text-accent">Hear From You</span></h2>
+        <p class="mt-4 text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">Fill in the form and our team will get back to you within 24 hours.</p>
         <div class="mt-6 space-y-3">
           <div class="flex items-center gap-3 text-sm text-gray-500 dark:text-gray-400">
             <i class="fas fa-check-circle text-accent"></i>
@@ -277,11 +277,11 @@
             <img src="/assets/m3.jpeg" class="h-10 w-10 rounded-full border-2 border-white object-cover dark:border-secondary">
           </div>
           <div class="text-sm text-gray-500 dark:text-gray-400">
-            <span class="font-bold text-secondary dark:text-white">2,000+</span> happy patients
+            <span class="font-medium text-secondary dark:text-white">2,000+</span> happy patients
           </div>
         </div>
       </div>
-      <div class="rounded-3xl bg-white p-8 shadow-2xl dark:bg-secondary/80">
+      <div class="rounded-3xl bg-white p-8 shadow-2xl dark:bg-darkGrey">
         <form class="space-y-4">
           <div class="grid gap-4 sm:grid-cols-2">
             <div>
@@ -315,8 +315,8 @@
             <label class="mb-1 block text-sm font-medium text-gray-600 dark:text-gray-300">Message</label>
             <textarea rows="3" placeholder="Write your message here..." class="w-full rounded-xl border border-gray-200 px-4 py-3 focus:border-accent focus:outline-none dark:border-white/10 dark:bg-secondary dark:text-white"></textarea>
           </div>
-          <button type="submit" class="w-full rounded-xl bg-accent py-3.5 font-semibold text-white transition hover:bg-accent/90">
-            <i class="fas fa-paper-plane mr-2"></i> Send Message
+          <button type="submit" class="w-full rounded-xl bg-accent py-3.5 font-medium text-white transition hover:bg-accent/90 dark:text-white">
+            <i class="fas fa-paper-plane me-2"></i> Send Message
           </button>
         </form>
       </div>
@@ -324,34 +324,34 @@
   </div>
 </section>
 <!-- ======== MAP & LOCATION - EMBEDDED MAP STYLE ======== -->
-<section class="bg-white dark:bg-darkGrey py-20" id="map">
+<section class="bg-white dark:bg-darkGrey py-20 overflow-hidden" id="map">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="text-center">
-      <span class="inline-block rounded-full bg-accent/20 px-4 py-1 text-sm font-semibold text-accent">Find Us</span>
-      <h2 class="mt-4 text-4xl font-bold text-secondary dark:text-white">Visit Our <span class="text-accent">Eye Care Center</span></h2>
+      <span class="inline-block rounded-full bg-accent/20 px-4 py-1 text-sm font-medium text-accent">Find Us</span>
+      <h2 class="mt-4 font-medium text-secondary dark:text-white text-3xl sm:text-4xl">Visit Our <span class="text-accent">Eye Care Center</span></h2>
       <p class="mx-auto mt-4 max-w-2xl text-gray-500 dark:text-gray-400">Conveniently located in the heart of the city</p>
     </div>
     <div class="mt-12 relative rounded-3xl overflow-hidden shadow-2xl">
       <img src="/assets/t11.jpg" alt="Map Location" class="h-[400px] w-full object-cover">
       <div class="absolute inset-0 bg-gradient-to-t from-secondary/80 via-secondary/20 to-transparent"></div>
-      <div class="absolute bottom-0 left-0 right-0 p-8">
+      <div class="absolute bottom-0 start-0 end-0 p-8">
         <div class="flex flex-wrap items-center justify-center gap-8">
           <div class="flex items-center gap-3 text-white">
             <i class="fas fa-map-marker-alt text-2xl text-accent"></i>
             <div>
-              <div class="font-bold">Our Location</div>
+              <div class="font-medium">Our Location</div>
               <div class="text-sm text-white/80">123 Vision Street, Eye City, EC 10001</div>
             </div>
           </div>
-          <div class="flex items-center gap-3 text-white border-l border-white/20 pl-8">
+          <div class="flex items-center gap-3 text-white border-s border-white/20 ps-8">
             <i class="fas fa-phone text-2xl text-accent"></i>
             <div>
-              <div class="font-bold">Call Us</div>
+              <div class="font-medium">Call Us</div>
               <div class="text-sm text-white/80">+1 (800) 555-2020</div>
             </div>
           </div>
-          <a href="#" class="rounded-full bg-accent px-8 py-3 font-semibold text-white transition hover:bg-accent/90">
-            <i class="fas fa-route mr-2"></i> Get Directions
+          <a href="#" class="rounded-full bg-accent px-8 py-3 font-medium text-white transition hover:bg-accent/90 dark:text-white">
+            <i class="fas fa-route me-2"></i> Get Directions
           </a>
         </div>
       </div>
@@ -359,77 +359,77 @@
   </div>
 </section>
 <!-- ======== FAQ - QUICK ANSWERS ======== -->
-<section class="bg-gray-50 py-20 dark:bg-secondary" id="faq">
+<section class="bg-gray-50 py-20 dark:bg-darkGrey overflow-hidden" id="faq">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="text-center">
-      <span class="inline-block text-sm font-semibold text-accent uppercase tracking-wider border-b-2 border-accent pb-1">FAQ</span>
-      <h2 class="mt-4 text-4xl font-bold text-secondary dark:text-white">Frequently Asked <span class="text-accent">Questions</span></h2>
+      <span class="inline-block text-sm font-medium text-accent uppercase tracking-wider border-b-2 border-accent pb-1">FAQ</span>
+      <h2 class="mt-4 font-medium text-secondary dark:text-white text-3xl sm:text-4xl">Frequently Asked <span class="text-accent">Questions</span></h2>
       <p class="mx-auto mt-4 max-w-2xl text-gray-500 dark:text-gray-400">Find quick answers to the most common questions</p>
     </div>
     <div class="mt-12 grid gap-4 md:grid-cols-2">
-      <div class="group rounded-2xl bg-white p-6 shadow-lg transition hover:shadow-2xl dark:bg-secondary/80">
+      <div class="group rounded-2xl bg-white p-6 shadow-lg transition hover:shadow-2xl dark:bg-darkGrey">
         <div class="flex items-start gap-4">
           <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent">
             <i class="fas fa-question text-sm"></i>
           </div>
           <div>
-            <h4 class="font-bold text-secondary dark:text-white">How do I book an appointment?</h4>
-            <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">You can book online through our website, call us directly, or visit our center in person.</p>
+            <h4 class="font-medium text-secondary dark:text-white text-xl sm:text-2xl">How do I book an appointment?</h4>
+            <p class="mt-2 text-sm text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">You can book online through our website, call us directly, or visit our center in person.</p>
           </div>
         </div>
       </div>
-      <div class="group rounded-2xl bg-white p-6 shadow-lg transition hover:shadow-2xl dark:bg-secondary/80">
+      <div class="group rounded-2xl bg-white p-6 shadow-lg transition hover:shadow-2xl dark:bg-darkGrey">
         <div class="flex items-start gap-4">
           <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent">
             <i class="fas fa-question text-sm"></i>
           </div>
           <div>
-            <h4 class="font-bold text-secondary dark:text-white">What services do you offer?</h4>
-            <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Comprehensive eye exams, prescription eyewear, contact lenses, LASIK, cataract surgery, and pediatric care.</p>
+            <h4 class="font-medium text-secondary dark:text-white text-xl sm:text-2xl">What services do you offer?</h4>
+            <p class="mt-2 text-sm text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">Comprehensive eye exams, prescription eyewear, contact lenses, LASIK, cataract surgery, and pediatric care.</p>
           </div>
         </div>
       </div>
-      <div class="group rounded-2xl bg-white p-6 shadow-lg transition hover:shadow-2xl dark:bg-secondary/80">
+      <div class="group rounded-2xl bg-white p-6 shadow-lg transition hover:shadow-2xl dark:bg-darkGrey">
         <div class="flex items-start gap-4">
           <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent">
             <i class="fas fa-question text-sm"></i>
           </div>
           <div>
-            <h4 class="font-bold text-secondary dark:text-white">Do you accept insurance?</h4>
-            <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Yes, we accept most major insurance plans. Contact us for specific coverage details.</p>
+            <h4 class="font-medium text-secondary dark:text-white text-xl sm:text-2xl">Do you accept insurance?</h4>
+            <p class="mt-2 text-sm text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">Yes, we accept most major insurance plans. Contact us for specific coverage details.</p>
           </div>
         </div>
       </div>
-      <div class="group rounded-2xl bg-white p-6 shadow-lg transition hover:shadow-2xl dark:bg-secondary/80">
+      <div class="group rounded-2xl bg-white p-6 shadow-lg transition hover:shadow-2xl dark:bg-darkGrey">
         <div class="flex items-start gap-4">
           <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent">
             <i class="fas fa-question text-sm"></i>
           </div>
           <div>
-            <h4 class="font-bold text-secondary dark:text-white">How often should I get an eye exam?</h4>
-            <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">We recommend an annual eye exam for most adults, or as advised by your optometrist.</p>
+            <h4 class="font-medium text-secondary dark:text-white text-xl sm:text-2xl">How often should I get an eye exam?</h4>
+            <p class="mt-2 text-sm text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">We recommend an annual eye exam for most adults, or as advised by your optometrist.</p>
           </div>
         </div>
       </div>
-      <div class="group rounded-2xl bg-white p-6 shadow-lg transition hover:shadow-2xl dark:bg-secondary/80">
+      <div class="group rounded-2xl bg-white p-6 shadow-lg transition hover:shadow-2xl dark:bg-darkGrey">
         <div class="flex items-start gap-4">
           <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent">
             <i class="fas fa-question text-sm"></i>
           </div>
           <div>
-            <h4 class="font-bold text-secondary dark:text-white">Do you offer virtual consultations?</h4>
-            <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Yes, we offer virtual consultations for certain services. Contact us to schedule a video appointment.</p>
+            <h4 class="font-medium text-secondary dark:text-white text-xl sm:text-2xl">Do you offer virtual consultations?</h4>
+            <p class="mt-2 text-sm text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">Yes, we offer virtual consultations for certain services. Contact us to schedule a video appointment.</p>
           </div>
         </div>
       </div>
-      <div class="group rounded-2xl bg-white p-6 shadow-lg transition hover:shadow-2xl dark:bg-secondary/80">
+      <div class="group rounded-2xl bg-white p-6 shadow-lg transition hover:shadow-2xl dark:bg-darkGrey">
         <div class="flex items-start gap-4">
           <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent">
             <i class="fas fa-question text-sm"></i>
           </div>
           <div>
-            <h4 class="font-bold text-secondary dark:text-white">What is your cancellation policy?</h4>
-            <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">We require 24 hours notice for cancellations. Same-day cancellations may incur a fee.</p>
+            <h4 class="font-medium text-secondary dark:text-white text-xl sm:text-2xl">What is your cancellation policy?</h4>
+            <p class="mt-2 text-sm text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">We require 24 hours notice for cancellations. Same-day cancellations may incur a fee.</p>
           </div>
         </div>
       </div>
@@ -437,15 +437,15 @@
   </div>
 </section>
 <!-- ======== CTA - CONNECT WITH US ======== -->
-<section class="bg-white dark:bg-secondary py-20" id="cta">
+<section class="bg-white dark:bg-secondary py-20 overflow-hidden" id="cta">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-accent to-primary p-1">
       <div class="rounded-3xl bg-white p-8 md:p-12 dark:bg-secondary">
         <div class="grid items-center gap-8 lg:grid-cols-3">
           <div class="lg:col-span-2">
-            <span class="inline-block text-sm font-semibold text-accent uppercase tracking-wider border-b-2 border-accent pb-1">Stay Connected</span>
-            <h2 class="mt-4 text-4xl font-bold text-secondary dark:text-white">Let's Start a <span class="text-accent">Conversation</span></h2>
-            <p class="mt-4 text-gray-500 dark:text-gray-400">Connect with us on social media or sign up for our newsletter to receive the latest updates and eye care tips.</p>
+            <span class="inline-block text-sm font-medium text-accent uppercase tracking-wider border-b-2 border-accent pb-1">Stay Connected</span>
+            <h2 class="mt-4 font-medium text-secondary dark:text-white text-3xl sm:text-4xl">Let's Start a <span class="text-accent">Conversation</span></h2>
+            <p class="mt-4 text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">Connect with us on social media or sign up for our newsletter to receive the latest updates and eye care tips.</p>
             <div class="mt-6 flex flex-wrap gap-4">
               <a href="#" class="flex items-center gap-3 rounded-full bg-[#1877F2] px-6 py-3 text-white transition hover:opacity-90">
                 <i class="fab fa-facebook-f"></i>
@@ -467,10 +467,10 @@
           </div>
           <div>
             <form class="space-y-3">
-              <p class="font-semibold text-secondary dark:text-white">Subscribe to our newsletter</p>
+              <p class="font-medium text-secondary dark:text-white">Subscribe to our newsletter</p>
               <input type="email" placeholder="Enter your email" class="w-full rounded-xl border border-gray-200 px-4 py-3 focus:border-accent focus:outline-none dark:border-white/10 dark:bg-secondary dark:text-white">
-              <button type="submit" class="w-full rounded-xl bg-accent py-3.5 font-semibold text-white transition hover:bg-accent/90">
-                <i class="fas fa-envelope mr-2"></i> Subscribe Now
+              <button type="submit" class="w-full rounded-xl bg-accent py-3.5 font-medium text-white transition hover:bg-accent/90 dark:text-white">
+                <i class="fas fa-envelope me-2"></i> Subscribe Now
               </button>
               <p class="text-xs text-gray-400">We respect your privacy. No spam.</p>
             </form>
@@ -492,7 +492,7 @@
               <i class="fas fa-eye text-lg"></i>
             </span>
             <div class="leading-tight">
-              <span class="block text-xl font-bold tracking-tight text-accent">OptiCare</span>
+              <span class="block text-xl font-medium tracking-tight text-accent">OptiCare</span>
             </div>
           </a>
           <p class="text-gray-400 mb-6">Caring for your eyes with precision and style. Premium eyewear and comprehensive eye care.</p>
@@ -503,7 +503,7 @@
           </div>
         </div>
         <div>
-          <h4 class="text-white font-bold mb-6 uppercase tracking-wider text-sm">Quick links</h4>
+          <h4 class="text-white font-medium mb-6 uppercase tracking-wider text-xl sm:text-2xl">Quick links</h4>
           <ul class="space-y-3 text-sm">
             <li><a href="index.html" class="block hover:text-accent transition-colors">Home</a></li>
             <li><a href="#eyewear" class="block hover:text-accent transition-colors">Eyewear</a></li>
@@ -515,7 +515,7 @@
           </ul>
         </div>
         <div>
-          <h4 class="text-lg font-bold mb-6">Visit us</h4>
+          <h4 class="font-medium mb-6 text-xl sm:text-2xl">Visit us</h4>
           <div class="space-y-4">
             <div class="flex items-center gap-3">
               <div class="h-10 w-10 rounded-full bg-accent/10 flex items-center justify-center">
@@ -538,15 +538,15 @@
           </div>
         </div>
         <div>
-          <h4 class="text-lg font-bold mb-6">Eye health tips</h4>
+          <h4 class="font-medium mb-6 text-xl sm:text-2xl">Eye health tips</h4>
           <p class="text-gray-400 mb-4">Get the latest on eye care and frame trends.</p>
           <form class="space-y-4">
             <input type="email" placeholder="Email address" class="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 focus:border-accent focus:outline-none text-white">
-            <button type="submit" class="w-full bg-accent text-white font-bold py-3 rounded-lg hover:opacity-90 transition-colors">Subscribe</button>
+            <button type="submit" class="w-full bg-accent text-white font-medium py-3 rounded-lg hover:opacity-90 transition-colors hover:bg-accent/90 dark:text-white">Subscribe</button>
           </form>
         </div>
       </div>
-      <div class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500 text-sm">
+      <div class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500 text-sm dark:text-gray-400">
         <div>© 2026 OptiCare Optical & Eye Care. All rights reserved.</div>
         <div class="flex gap-6">
           <a href="#" class="hover:text-accent transition-colors">Privacy Policy</a>
@@ -627,7 +627,7 @@
             }
           } else {
             // Desktop active link
-            link.classList.add('bg-accent', 'text-white', 'shadow-sm', 'font-bold');
+            link.classList.add('bg-accent', 'text-white', 'shadow-sm', 'font-medium');
             link.classList.remove('hover:text-primary', 'dark:hover:text-accent');
           }
         } else {
@@ -642,7 +642,7 @@
                    icon.classList.add('text-accent');
                 }
              } else {
-                link.classList.remove('bg-accent', 'text-white', 'shadow-sm', 'font-bold');
+                link.classList.remove('bg-accent', 'text-white', 'shadow-sm', 'font-medium');
              }
           }
         }
@@ -652,10 +652,10 @@
       const desktopHome = document.querySelector('.home-trigger');
       if (desktopHome) {
         if (!isHome) {
-          desktopHome.classList.remove('bg-accent', 'text-white', 'shadow-sm', 'font-bold');
+          desktopHome.classList.remove('bg-accent', 'text-white', 'shadow-sm', 'font-medium');
           desktopHome.classList.add('hover:text-primary', 'dark:hover:text-accent');
         } else {
-          desktopHome.classList.add('bg-accent', 'text-white', 'shadow-sm', 'font-bold');
+          desktopHome.classList.add('bg-accent', 'text-white', 'shadow-sm', 'font-medium');
           desktopHome.classList.remove('hover:text-primary', 'dark:hover:text-accent');
         }
       }

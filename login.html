@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OptiCare | Login</title>
-    <link rel="icon" href="assets/logo.png" type="image/jpeg">
+    <link rel="icon" href="assets/logo.png" type="image/png">
     <meta name="description" content="Login to OptiCare - Optical Store & Eye Care Center">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
@@ -108,15 +108,7 @@
 
 <body class="bg-white text-secondary dark:bg-secondary dark:text-gray-100 transition-colors duration-300">
 
-    <div class="controls">
-        <button onclick="toggleRTL()" class="btn-control" title="Toggle RTL">
-            <i class="fas fa-exchange-alt"></i>
-        </button>
-        <button onclick="toggleTheme()" class="btn-control" title="Toggle Dark Mode">
-            <i class="fas fa-moon dark:hidden"></i>
-            <i class="fas fa-sun hidden dark:inline-block"></i>
-        </button>
-    </div>
+
 
     <div class="relative w-full max-w-5xl">
         <div class="auth-card w-full flex flex-col md:flex-row rounded-3xl overflow-hidden shadow-2xl bg-white dark:bg-secondary/95">
@@ -137,12 +129,12 @@
           <i class="fas fa-eye text-lg"></i>
         </span>
         <div class="leading-tight">
-          <span class="block text-xl font-bold tracking-tight text-accent">OptiCare</span>
+          <span class="block text-xl font-medium tracking-tight text-accent">OptiCare</span>
         </div>
       </a>
                     
                     <div class="mt-12">
-                        <h2 class="text-3xl font-bold text-white leading-tight mb-4">
+                        <h2 class="font-medium text-white leading-tight mb-4 text-3xl sm:text-4xl">
                             Your Clear Vision<br>Journey<br>Begins Here
                         </h2>
                         <p class="text-white/80 text-sm">
@@ -171,16 +163,16 @@
                                 <i class="fas fa-eye text-lg"></i>
                             </span>
                             <div class="leading-tight">
-                                <span class="block text-xl font-bold tracking-tight text-accent">OptiCare</span>
+                                <span class="block text-xl font-medium tracking-tight text-accent">OptiCare</span>
                             </div>
                         </a>
                     </div>
 
                     <div class="mb-4 sm:mb-8 text-center">
-                        <h3 class="text-lg sm:text-2xl font-bold text-secondary dark:text-white mb-1 sm:mb-2">
+                        <h3 class="font-medium text-secondary dark:text-white mb-1 sm:mb-2 text-2xl sm:text-3xl">
                             Welcome Back
                         </h3>
-                        <p class="text-[13px] text-gray-500 dark:text-gray-400">
+                        <p class="text-[13px] text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">
                             Login to access your vision care dashboard.
                         </p>
                     </div>
@@ -212,14 +204,14 @@
 
                     <div class="flex items-center gap-3 mb-4">
                         <div class="flex-1 h-px bg-gray-200 dark:bg-white/10"></div>
-                        <span class="text-[10px] font-bold uppercase text-gray-400 dark:text-gray-500">OR</span>
+                        <span class="text-[10px] font-medium uppercase text-gray-400 dark:text-gray-500">OR</span>
                         <div class="flex-1 h-px bg-gray-200 dark:bg-white/10"></div>
                     </div>
 
                     <!-- Login Form -->
                     <form class="space-y-2 sm:space-y-5" onsubmit="event.preventDefault(); handleLogin();">
                         <div>
-                            <label class="block text-[11px] font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-1.5">
+                            <label class="block text-[11px] font-medium uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-1.5">
                                 Email Address
                             </label>
                             <input type="email" id="loginEmail" required
@@ -228,15 +220,15 @@
                         </div>
 
                         <div>
-                            <label class="block text-[11px] font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-1.5">
+                            <label class="block text-[11px] font-medium uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-1.5">
                                 Password
                             </label>
                             <div class="relative">
                                 <input type="password" id="password" required
-                                    class="input-field w-full px-4 py-2.5 rounded-xl text-sm outline-none focus:ring-2 focus:ring-accent/50 transition pr-10 border border-gray-200 dark:border-white/10 bg-white dark:bg-secondary text-secondary dark:text-white"
+                                    class="input-field w-full px-4 py-2.5 rounded-xl text-sm outline-none focus:ring-2 focus:ring-accent/50 transition pe-10 border border-gray-200 dark:border-white/10 bg-white dark:bg-secondary text-secondary dark:text-white"
                                     placeholder="••••••••">
                                 <button type="button" onclick="togglePasswordVisibility('password', this)"
-                                    class="absolute inset-y-0 right-0 pr-3 flex items-center text-gray-400 hover:text-gray-600 dark:text-gray-500">
+                                    class="absolute inset-y-0 end-0 pe-3 flex items-center text-gray-400 hover:text-gray-600 dark:text-gray-500">
                                     <svg class="w-5 h-5 eye-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -256,20 +248,20 @@
                                     <input type="checkbox" class="w-3.5 h-3.5 rounded border-gray-300 dark:border-white/20 text-accent focus:ring-accent">
                                     <span class="text-xs text-gray-500 dark:text-gray-400">Remember me</span>
                                 </label>
-                                <a href="#" class="text-xs font-semibold text-accent hover:underline">Forgot Password?</a>
+                                <a href="#" class="text-xs font-medium text-accent hover:underline">Forgot Password?</a>
                             </div>
                         </div>
 
                         <button type="submit"
-                            class="btn-primary w-full py-3 rounded-xl text-white font-bold text-sm shadow-lg shadow-accent/20 mt-1 hover:opacity-90 transition-transform active:scale-95">
-                            <i class="fas fa-sign-in-alt mr-2 text-xs"></i>
+                            class="btn-primary w-full py-3 rounded-xl text-white font-medium text-sm shadow-lg shadow-accent/20 mt-1 hover:opacity-90 transition-transform active:scale-95">
+                            <i class="fas fa-sign-in-alt me-2 text-xs"></i>
                             Login to Dashboard
                         </button>
                     </form>
 
-                    <p class="text-[11px] mt-4 text-center text-gray-500 dark:text-gray-400">
+                    <p class="text-[11px] mt-4 text-center text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">
                         Don't have an account? 
-                        <a href="signup.html" class="text-accent font-bold hover:underline">Create an account</a>
+                        <a href="signup.html" class="text-accent font-medium hover:underline">Create an account</a>
                     </p>
 
                     
@@ -358,7 +350,7 @@
             }
           } else {
             // Desktop active link
-            link.classList.add('bg-accent', 'text-white', 'shadow-sm', 'font-bold');
+            link.classList.add('bg-accent', 'text-white', 'shadow-sm', 'font-medium');
             link.classList.remove('hover:text-primary', 'dark:hover:text-accent');
           }
         } else {
@@ -373,7 +365,7 @@
                    icon.classList.add('text-accent');
                 }
              } else {
-                link.classList.remove('bg-accent', 'text-white', 'shadow-sm', 'font-bold');
+                link.classList.remove('bg-accent', 'text-white', 'shadow-sm', 'font-medium');
              }
           }
         }
@@ -383,10 +375,10 @@
       const desktopHome = document.querySelector('.home-trigger');
       if (desktopHome) {
         if (!isHome) {
-          desktopHome.classList.remove('bg-accent', 'text-white', 'shadow-sm', 'font-bold');
+          desktopHome.classList.remove('bg-accent', 'text-white', 'shadow-sm', 'font-medium');
           desktopHome.classList.add('hover:text-primary', 'dark:hover:text-accent');
         } else {
-          desktopHome.classList.add('bg-accent', 'text-white', 'shadow-sm', 'font-bold');
+          desktopHome.classList.add('bg-accent', 'text-white', 'shadow-sm', 'font-medium');
           desktopHome.classList.remove('hover:text-primary', 'dark:hover:text-accent');
         }
       }

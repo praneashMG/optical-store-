@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>OptiCare | Optical Store & Eye Care Center</title>
-  <link rel="icon" href="assets/logo.png" type="image/jpeg">
+  <link rel="icon" href="assets/logo.png" type="image/png">
   <meta name="description" content="Premium eyewear & comprehensive eye care for your family.">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
@@ -47,20 +47,20 @@
           <i class="fas fa-eye text-lg"></i>
         </span>
         <div class="leading-tight">
-          <span class="block text-xl font-bold tracking-tight text-accent">OptiCare</span>
+          <span class="block text-xl font-medium tracking-tight text-accent">OptiCare</span>
         </div>
       </a>
 
       <!-- Desktop: 7 nav items -->
       <div class="hidden lg:flex items-center gap-2">
-        <ul class="flex items-center gap-0.5 text-xs font-semibold">
+        <ul class="flex items-center gap-0.5 text-xs font-medium">
           <!-- 1. Home (dropdown) -->
           <li class="relative group">
             <button class="home-trigger flex items-center gap-1 rounded-md px-2.5 py-1.5 hover:text-primary dark:hover:text-accent transition-colors">
               <span>Home</span>
               <i class="fas fa-chevron-down text-[9px]"></i>
             </button>
-            <ul class="invisible absolute left-0 mt-1.5 w-44 rounded-md bg-white border border-gray-100 dark:bg-secondary dark:border-white/10 p-1.5 opacity-0 shadow-xl transition-all group-hover:visible group-hover:opacity-100 z-50">
+            <ul class="invisible absolute start-0 mt-1.5 w-44 rounded-md bg-white border border-gray-100 dark:bg-secondary dark:border-white/10 p-1.5 opacity-0 shadow-xl transition-all group-hover:visible group-hover:opacity-100 z-50">
               <li><a href="index.html" class="block rounded-md px-3 py-1.5 hover:bg-primary hover:text-white transition-colors">Home 1</a></li>
               <li><a href="homepage2.html" class="block rounded-md px-3 py-1.5 hover:bg-primary hover:text-white transition-colors">Home 2</a></li>
             </ul>
@@ -79,18 +79,18 @@
           <li><a href="contact.html" class="block rounded-md px-3 py-1.5 hover:text-primary dark:hover:text-accent transition-colors">Contact</a></li>
         </ul>
 
-        <div class="ml-4 flex items-center gap-3 border-l border-gray-200 dark:border-white/10 pl-4">
+        <div class="ms-4 flex items-center gap-3 border-s border-gray-200 dark:border-white/10 ps-4">
           <button id="themeToggleDesktop" class="flex h-9 w-9 items-center justify-center rounded-full border border-gray-300 dark:border-white/10 hover:bg-primary hover:text-white transition-all">
             <i class="fas fa-moon"></i>
           </button>
           <button id="rtlToggleDesktop" class="flex h-9 w-9 items-center justify-center rounded-full border border-gray-300 dark:border-white/10 hover:bg-primary hover:text-white transition-all">
             <i class="fas fa-exchange-alt"></i>
           </button>
-          <div class="ml-2 flex items-center gap-2">
-            <a href="login.html" class="inline-flex items-center gap-1.5 rounded-md border border-accent text-accent px-3 py-1.5 text-xs font-semibold hover:bg-accent hover:text-white transition-all active:scale-95">
+          <div class="ms-2 flex items-center gap-2">
+            <a href="login.html" class="inline-flex items-center gap-1.5 rounded-md border border-accent text-accent px-3 py-1.5 text-xs font-medium hover:bg-accent hover:text-white transition-all active:scale-95">
               <i class="fas fa-sign-in-alt text-[10px]"></i><span>Login</span>
             </a>
-            <a href="signup.html" class="inline-flex items-center gap-1.5 rounded-md bg-accent px-3 py-1.5 text-xs font-semibold text-white hover:opacity-90 transition-transform active:scale-95 shadow-md shadow-accent/20">
+            <a href="signup.html" class="inline-flex items-center gap-1.5 rounded-md bg-accent px-3 py-1.5 text-xs font-medium text-white hover:opacity-90 transition-transform active:scale-95 shadow-md shadow-accent/20 hover:bg-accent/90 dark:text-white">
               <i class="fas fa-user-plus text-[10px]"></i><span>Register</span>
             </a>
           </div>
@@ -115,33 +115,33 @@
       <div class="flex flex-col gap-1 p-4">
         <!-- 1. Home dropdown -->
         <details class="group">
-          <summary class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-3 text-lg font-bold list-none hover:bg-gray-50 dark:hover:bg-white/5">
+          <summary class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-3 text-lg font-medium list-none hover:bg-gray-50 dark:hover:bg-white/5">
             <div class="flex items-center gap-4"><i class="fas fa-home w-6 text-accent"></i><span>Home</span></div>
             <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition-transform"></i>
           </summary>
-          <div class="mt-1 flex flex-col gap-1 pl-14 text-gray-500 dark:text-gray-400">
+          <div class="mt-1 flex flex-col gap-1 ps-14 text-gray-500 dark:text-gray-400">
             <a href="index.html" class="block rounded-lg px-4 py-2 hover:text-accent transition-colors">Home 1</a>
             <a href="homepage2.html" class="block rounded-lg px-4 py-2 hover:text-accent transition-colors">Home 2</a>
           </div>
         </details>
         <!-- 2. Eyewear -->
-        <a href="eyewear.html" class="block items-center gap-4 rounded-lg px-4 py-3 text-lg font-medium hover:bg-gray-50 dark:hover:bg-white/5">
+        <a href="eyewear.html" class="flex items-center gap-4 rounded-lg px-4 py-3 text-lg font-medium hover:bg-gray-50 dark:hover:bg-white/5">
           <i class="fas fa-glasses text-accent w-6"></i> Eyewear
         </a>
         <!-- 3. Eye Care -->
-        <a href="eyecare.html" class="block items-center gap-4 rounded-lg px-4 py-3 text-lg font-medium hover:bg-gray-50 dark:hover:bg-white/5">
+        <a href="eyecare.html" class="flex items-center gap-4 rounded-lg px-4 py-3 text-lg font-medium hover:bg-gray-50 dark:hover:bg-white/5">
           <i class="fas fa-stethoscope text-accent w-6"></i> Eye Care
         </a>
         <!-- 4. Lenses -->
-        <a href="lenses.html" class="block items-center gap-4 rounded-lg px-4 py-3 text-lg font-medium hover:bg-gray-50 dark:hover:bg-white/5">
+        <a href="lenses.html" class="flex items-center gap-4 rounded-lg px-4 py-3 text-lg font-medium hover:bg-gray-50 dark:hover:bg-white/5">
           <i class="fas fa-sun text-accent w-6"></i> Lenses
         </a>
         <!-- 5. Brands -->
-        <a href="brands.html" class="block items-center gap-4 rounded-lg px-4 py-3 text-lg font-medium hover:bg-gray-50 dark:hover:bg-white/5">
+        <a href="brands.html" class="flex items-center gap-4 rounded-lg px-4 py-3 text-lg font-medium hover:bg-gray-50 dark:hover:bg-white/5">
           <i class="fas fa-tag text-accent w-6"></i> Brands
         </a>
         <!-- 6. About -->
-        <a href="about.html" class="block items-center gap-4 rounded-lg px-4 py-3 text-lg font-medium hover:bg-gray-50 dark:hover:bg-white/5">
+        <a href="about.html" class="flex items-center gap-4 rounded-lg px-4 py-3 text-lg font-medium hover:bg-gray-50 dark:hover:bg-white/5">
           <i class="fas fa-info-circle text-accent w-6"></i> About
         </a>
         <!-- 7. Contact -->
@@ -154,10 +154,10 @@
             <i class="fas fa-exchange-alt text-accent w-6"></i> Switch Direction
           </button>
           <div class="mt-4 flex gap-3">
-            <a href="login.html" class="flex-1 flex items-center justify-center gap-2 rounded-lg border border-antiqueGold py-4 text-lg font-bold text-antiqueGold hover:bg-antiqueGold hover:text-blackMain transition-all">
+            <a href="login.html" class="flex-1 flex items-center justify-center gap-2 rounded-lg border border-antiqueGold py-4 text-lg font-medium text-antiqueGold hover:bg-antiqueGold hover:text-blackMain transition-all">
               <i class="fas fa-right-to-bracket"></i> Login
             </a>
-            <a href="signup.html" class="flex-1 flex items-center justify-center gap-2 rounded-lg bg-accent py-4 text-lg font-bold text-white hover:opacity-90 transition-all">
+            <a href="signup.html" class="flex-1 flex items-center justify-center gap-2 rounded-lg bg-accent py-4 text-lg font-medium text-white hover:opacity-90 transition-all hover:bg-accent/90 dark:text-white">
               <i class="fas fa-user-plus"></i> SignUp
             </a>
           </div>
@@ -177,22 +177,22 @@
     <div class="grid items-center gap-12 lg:grid-cols-2">
       <div>
         <div class="inline-flex items-center rounded-full bg-accent/20 backdrop-blur-sm px-4 py-1.5 text-sm font-medium text-accent dark:bg-accent/30">
-          <i class="fas fa-glasses mr-2"></i>
+          <i class="fas fa-glasses me-2"></i>
           <span>2026 Collection</span>
         </div>
-        <h1 class="mt-6 text-5xl font-bold text-secondary dark:text-white sm:text-6xl lg:text-7xl leading-tight">
+        <h1 class="mt-6 font-medium text-secondary dark:text-white leading-tight text-4xl sm:text-5xl lg:text-6xl">
           Find Your <br><span class="text-accent">Perfect Frames</span>
         </h1>
         <p class="mt-6 text-lg text-gray-600 dark:text-gray-300 max-w-lg">
           Discover our curated collection of premium eyewear — from classic designs to the latest fashion-forward styles.
         </p>
         <div class="mt-8 flex flex-wrap gap-4">
-          <a href="#" class="group inline-flex items-center rounded-full bg-accent px-8 py-3.5 font-semibold text-white shadow-lg shadow-accent/30 transition hover:bg-accent/90 hover:scale-105">
-            <i class="fas fa-shopping-bag mr-2"></i> Shop Now
-            <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i>
+          <a href="#" class="group inline-flex items-center rounded-full bg-accent px-8 py-3.5 font-medium text-white shadow-lg shadow-accent/30 transition hover:bg-accent/90 hover:scale-105 dark:text-white">
+            <i class="fas fa-shopping-bag me-2"></i> Shop Now
+            <i class="fas fa-arrow-right ms-2 group-hover:translate-x-1 transition"></i>
           </a>
-          <a href="#" class="inline-flex items-center rounded-full border border-gray-300 bg-white px-8 py-3.5 font-semibold text-secondary transition hover:bg-gray-50 dark:border-white/10 dark:bg-transparent dark:text-white dark:hover:bg-white/5">
-            <i class="fas fa-play-circle mr-2"></i> Virtual Try-On
+          <a href="#" class="inline-flex items-center rounded-full border border-gray-300 bg-white px-8 py-3.5 font-medium text-secondary transition hover:bg-gray-50 dark:border-white/10 dark:bg-transparent dark:text-white dark:hover:bg-white/5">
+            <i class="fas fa-play-circle me-2"></i> Virtual Try-On
           </a>
         </div>
         <div class="mt-8 flex items-center gap-6">
@@ -202,7 +202,7 @@
             <img src="/assets/m3.jpeg" class="h-10 w-10 rounded-full border-2 border-white object-cover">
           </div>
           <div class="text-sm text-gray-500 dark:text-gray-400">
-            <span class="font-bold text-secondary dark:text-white">10,000+</span> frames in stock
+            <span class="font-medium text-secondary dark:text-white">10,000+</span> frames in stock
           </div>
         </div>
       </div>
@@ -219,22 +219,22 @@
   </div>
 </section>
 <!-- ======== CATEGORIES - FRAME TYPES ======== -->
-<section class="bg-gray-50 py-20 dark:bg-secondary" id="categories">
+<section class="bg-gray-50 py-20 dark:bg-darkGrey overflow-hidden" id="categories">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="text-center">
-      <span class="inline-block text-sm font-semibold text-accent uppercase tracking-wider border-b-2 border-accent pb-1">Shop by Category</span>
-      <h2 class="mt-4 text-4xl font-bold text-secondary dark:text-white">Browse Our <span class="text-accent">Collections</span></h2>
+      <span class="inline-block text-sm font-medium text-accent uppercase tracking-wider border-b-2 border-accent pb-1">Shop by Category</span>
+      <h2 class="mt-4 font-medium text-secondary dark:text-white text-3xl sm:text-4xl">Browse Our <span class="text-accent">Collections</span></h2>
       <p class="mx-auto mt-4 max-w-2xl text-gray-500 dark:text-gray-400">Find the perfect frames that match your style and personality</p>
     </div>
     <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
       <div class="group relative overflow-hidden rounded-2xl shadow-lg transition hover:shadow-2xl">
         <img src="/assets/q1.jpg" alt="Women's Frames" class="h-72 w-full object-cover transition group-hover:scale-110 duration-500">
         <div class="absolute inset-0 bg-gradient-to-t from-secondary/80 via-secondary/20 to-transparent"></div>
-        <div class="absolute bottom-0 left-0 right-0 p-6">
-          <h3 class="text-2xl font-bold text-white">Women's</h3>
+        <div class="absolute bottom-0 start-0 end-0 p-6">
+          <h3 class="font-medium text-white text-2xl sm:text-3xl">Women's</h3>
           <p class="text-sm text-white/80">200+ styles</p>
           <div class="mt-3 flex items-center gap-2 text-white/60 group-hover:text-white transition">
-            <span class="text-sm font-semibold">Shop Collection</span>
+            <span class="text-sm font-medium">Shop Collection</span>
             <i class="fas fa-arrow-right group-hover:translate-x-2 transition"></i>
           </div>
         </div>
@@ -242,11 +242,11 @@
       <div class="group relative overflow-hidden rounded-2xl shadow-lg transition hover:shadow-2xl">
         <img src="/assets/q2.jpg" alt="Men's Frames" class="h-72 w-full object-cover transition group-hover:scale-110 duration-500">
         <div class="absolute inset-0 bg-gradient-to-t from-secondary/80 via-secondary/20 to-transparent"></div>
-        <div class="absolute bottom-0 left-0 right-0 p-6">
-          <h3 class="text-2xl font-bold text-white">Men's</h3>
+        <div class="absolute bottom-0 start-0 end-0 p-6">
+          <h3 class="font-medium text-white text-2xl sm:text-3xl">Men's</h3>
           <p class="text-sm text-white/80">150+ styles</p>
           <div class="mt-3 flex items-center gap-2 text-white/60 group-hover:text-white transition">
-            <span class="text-sm font-semibold">Shop Collection</span>
+            <span class="text-sm font-medium">Shop Collection</span>
             <i class="fas fa-arrow-right group-hover:translate-x-2 transition"></i>
           </div>
         </div>
@@ -254,11 +254,11 @@
       <div class="group relative overflow-hidden rounded-2xl shadow-lg transition hover:shadow-2xl">
         <img src="/assets/q3.jpg" alt="Kids Frames" class="h-72 w-full object-cover transition group-hover:scale-110 duration-500">
         <div class="absolute inset-0 bg-gradient-to-t from-secondary/80 via-secondary/20 to-transparent"></div>
-        <div class="absolute bottom-0 left-0 right-0 p-6">
-          <h3 class="text-2xl font-bold text-white">Kids</h3>
+        <div class="absolute bottom-0 start-0 end-0 p-6">
+          <h3 class="font-medium text-white text-2xl sm:text-3xl">Kids</h3>
           <p class="text-sm text-white/80">80+ styles</p>
           <div class="mt-3 flex items-center gap-2 text-white/60 group-hover:text-white transition">
-            <span class="text-sm font-semibold">Shop Collection</span>
+            <span class="text-sm font-medium">Shop Collection</span>
             <i class="fas fa-arrow-right group-hover:translate-x-2 transition"></i>
           </div>
         </div>
@@ -266,11 +266,11 @@
       <div class="group relative overflow-hidden rounded-2xl shadow-lg transition hover:shadow-2xl">
         <img src="/assets/q4.jpg" alt="Sunglasses" class="h-72 w-full object-cover transition group-hover:scale-110 duration-500">
         <div class="absolute inset-0 bg-gradient-to-t from-secondary/80 via-secondary/20 to-transparent"></div>
-        <div class="absolute bottom-0 left-0 right-0 p-6">
-          <h3 class="text-2xl font-bold text-white">Sunglasses</h3>
+        <div class="absolute bottom-0 start-0 end-0 p-6">
+          <h3 class="font-medium text-white text-2xl sm:text-3xl">Sunglasses</h3>
           <p class="text-sm text-white/80">120+ styles</p>
           <div class="mt-3 flex items-center gap-2 text-white/60 group-hover:text-white transition">
-            <span class="text-sm font-semibold">Shop Collection</span>
+            <span class="text-sm font-medium">Shop Collection</span>
             <i class="fas fa-arrow-right group-hover:translate-x-2 transition"></i>
           </div>
         </div>
@@ -279,133 +279,133 @@
   </div>
 </section>
 <!-- ======== BRANDS - FEATURED BRANDS ======== -->
-<section class="bg-white dark:bg-darkGrey py-20" id="brands">
+<section class="bg-white dark:bg-darkGrey py-20 overflow-hidden" id="brands">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="flex items-end justify-between">
       <div>
-        <span class="inline-block text-sm font-semibold text-accent uppercase tracking-wider">Top Brands</span>
-        <h2 class="mt-2 text-4xl font-bold text-secondary dark:text-white">Featured <span class="text-accent">Designers</span></h2>
-        <p class="mt-2 text-gray-500 dark:text-gray-400">Premium eyewear from the world's leading brands</p>
+        <span class="inline-block text-sm font-medium text-accent uppercase tracking-wider">Top Brands</span>
+        <h2 class="mt-2 font-medium text-secondary dark:text-white text-3xl sm:text-4xl">Featured <span class="text-accent">Designers</span></h2>
+        <p class="mt-2 text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">Premium eyewear from the world's leading brands</p>
       </div>
-      <a href="#" class="hidden rounded-full border border-accent px-6 py-2 text-sm font-semibold text-accent transition hover:bg-accent hover:text-white sm:inline-flex">View All →</a>
+      <a href="#" class="hidden rounded-full border border-accent px-6 py-2 text-sm font-medium text-accent transition hover:bg-accent hover:text-white sm:inline-flex">View All →</a>
     </div>
     <div class="mt-12 grid gap-6 sm:grid-cols-3 lg:grid-cols-6">
-      <div class="group rounded-2xl bg-gray-50 p-8 text-center transition hover:shadow-xl dark:bg-secondary/80">
+      <div class="group rounded-2xl bg-gray-50 p-8 text-center transition hover:shadow-xl dark:bg-darkGrey">
         <div class="flex h-24 items-center justify-center">
           <i class="fas fa-glasses text-5xl text-accent/60 group-hover:text-accent transition"></i>
         </div>
-        <h4 class="mt-3 font-bold text-secondary dark:text-white">Ray-Ban</h4>
+        <h4 class="mt-3 font-medium text-secondary dark:text-white text-xl sm:text-2xl">Ray-Ban</h4>
         <p class="text-xs text-gray-400">42 styles</p>
       </div>
-      <div class="group rounded-2xl bg-gray-50 p-8 text-center transition hover:shadow-xl dark:bg-secondary/80">
+      <div class="group rounded-2xl bg-gray-50 p-8 text-center transition hover:shadow-xl dark:bg-darkGrey">
         <div class="flex h-24 items-center justify-center">
           <i class="fas fa-crown text-5xl text-accent/60 group-hover:text-accent transition"></i>
         </div>
-        <h4 class="mt-3 font-bold text-secondary dark:text-white">Gucci</h4>
+        <h4 class="mt-3 font-medium text-secondary dark:text-white text-xl sm:text-2xl">Gucci</h4>
         <p class="text-xs text-gray-400">28 styles</p>
       </div>
-      <div class="group rounded-2xl bg-gray-50 p-8 text-center transition hover:shadow-xl dark:bg-secondary/80">
+      <div class="group rounded-2xl bg-gray-50 p-8 text-center transition hover:shadow-xl dark:bg-darkGrey">
         <div class="flex h-24 items-center justify-center">
           <i class="fas fa-gem text-5xl text-accent/60 group-hover:text-accent transition"></i>
         </div>
-        <h4 class="mt-3 font-bold text-secondary dark:text-white">Prada</h4>
+        <h4 class="mt-3 font-medium text-secondary dark:text-white text-xl sm:text-2xl">Prada</h4>
         <p class="text-xs text-gray-400">35 styles</p>
       </div>
-      <div class="group rounded-2xl bg-gray-50 p-8 text-center transition hover:shadow-xl dark:bg-secondary/80">
+      <div class="group rounded-2xl bg-gray-50 p-8 text-center transition hover:shadow-xl dark:bg-darkGrey">
         <div class="flex h-24 items-center justify-center">
           <i class="fas fa-star text-5xl text-accent/60 group-hover:text-accent transition"></i>
         </div>
-        <h4 class="mt-3 font-bold text-secondary dark:text-white">Oakley</h4>
+        <h4 class="mt-3 font-medium text-secondary dark:text-white text-xl sm:text-2xl">Oakley</h4>
         <p class="text-xs text-gray-400">45 styles</p>
       </div>
-      <div class="group rounded-2xl bg-gray-50 p-8 text-center transition hover:shadow-xl dark:bg-secondary/80">
+      <div class="group rounded-2xl bg-gray-50 p-8 text-center transition hover:shadow-xl dark:bg-darkGrey">
         <div class="flex h-24 items-center justify-center">
           <i class="fas fa-feather text-5xl text-accent/60 group-hover:text-accent transition"></i>
         </div>
-        <h4 class="mt-3 font-bold text-secondary dark:text-white">Tom Ford</h4>
+        <h4 class="mt-3 font-medium text-secondary dark:text-white text-xl sm:text-2xl">Tom Ford</h4>
         <p class="text-xs text-gray-400">22 styles</p>
       </div>
-      <div class="group rounded-2xl bg-gray-50 p-8 text-center transition hover:shadow-xl dark:bg-secondary/80">
+      <div class="group rounded-2xl bg-gray-50 p-8 text-center transition hover:shadow-xl dark:bg-darkGrey">
         <div class="flex h-24 items-center justify-center">
           <i class="fas fa-shield-alt text-5xl text-accent/60 group-hover:text-accent transition"></i>
         </div>
-        <h4 class="mt-3 font-bold text-secondary dark:text-white">Dior</h4>
+        <h4 class="mt-3 font-medium text-secondary dark:text-white text-xl sm:text-2xl">Dior</h4>
         <p class="text-xs text-gray-400">30 styles</p>
       </div>
     </div>
   </div>
 </section>
 <!-- ======== LENSES - LENS OPTIONS ======== -->
-<section class="bg-gradient-to-br from-accent/5 to-primary/5 py-20 dark:bg-secondary" id="lenses">
+<section class="bg-gradient-to-br from-accent/5 to-primary/5 py-20 dark:bg-secondary overflow-hidden" id="lenses">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="text-center">
-      <span class="inline-block rounded-full bg-accent/20 px-4 py-1 text-sm font-semibold text-accent">Lens Technology</span>
-      <h2 class="mt-4 text-4xl font-bold text-secondary dark:text-white">Choose Your <span class="text-accent">Perfect Lenses</span></h2>
+      <span class="inline-block rounded-full bg-accent/20 px-4 py-1 text-sm font-medium text-accent">Lens Technology</span>
+      <h2 class="mt-4 font-medium text-secondary dark:text-white text-3xl sm:text-4xl">Choose Your <span class="text-accent">Perfect Lenses</span></h2>
       <p class="mx-auto mt-4 max-w-2xl text-gray-500 dark:text-gray-400">Customize your eyewear with our advanced lens options</p>
     </div>
     <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-      <div class="group rounded-2xl bg-white p-8 shadow-lg transition hover:shadow-2xl dark:bg-secondary/80 text-center">
+      <div class="group rounded-2xl bg-white p-8 shadow-lg transition hover:shadow-2xl dark:bg-darkGrey text-center">
         <div class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-accent/10 text-accent group-hover:bg-accent group-hover:text-white transition">
           <i class="fas fa-sun text-3xl"></i>
         </div>
-        <h3 class="mt-4 text-xl font-bold text-secondary dark:text-white">Transition Lenses</h3>
-        <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Adapt to changing light conditions. Clear indoors, dark outdoors.</p>
+        <h3 class="mt-4 font-medium text-secondary dark:text-white text-2xl sm:text-3xl">Transition Lenses</h3>
+        <p class="mt-2 text-sm text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">Adapt to changing light conditions. Clear indoors, dark outdoors.</p>
         <div class="mt-4 flex justify-center gap-2 text-xs">
           <span class="rounded-full bg-accent/10 px-3 py-1 text-accent">UV Protection</span>
           <span class="rounded-full bg-accent/10 px-3 py-1 text-accent">Blue Light</span>
         </div>
       </div>
-      <div class="group rounded-2xl bg-white p-8 shadow-lg transition hover:shadow-2xl dark:bg-secondary/80 text-center ring-2 ring-accent relative">
-        <div class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-accent px-4 py-1 text-xs font-bold text-white">Popular</div>
+      <div class="group rounded-2xl bg-white p-8 shadow-lg transition hover:shadow-2xl dark:bg-darkGrey text-center ring-2 ring-accent relative">
+        <div class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-accent px-4 py-1 text-xs font-medium text-white">Popular</div>
         <div class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-accent/10 text-accent group-hover:bg-accent group-hover:text-white transition">
           <i class="fas fa-mobile-alt text-3xl"></i>
         </div>
-        <h3 class="mt-4 text-xl font-bold text-secondary dark:text-white">Blue Light Filter</h3>
-        <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Reduce digital eye strain and protect against harmful blue light.</p>
+        <h3 class="mt-4 font-medium text-secondary dark:text-white text-2xl sm:text-3xl">Blue Light Filter</h3>
+        <p class="mt-2 text-sm text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">Reduce digital eye strain and protect against harmful blue light.</p>
         <div class="mt-4 flex justify-center gap-2 text-xs">
           <span class="rounded-full bg-accent/10 px-3 py-1 text-accent">99% Filter</span>
           <span class="rounded-full bg-accent/10 px-3 py-1 text-accent">Anti-Reflective</span>
         </div>
       </div>
-      <div class="group rounded-2xl bg-white p-8 shadow-lg transition hover:shadow-2xl dark:bg-secondary/80 text-center">
+      <div class="group rounded-2xl bg-white p-8 shadow-lg transition hover:shadow-2xl dark:bg-darkGrey text-center">
         <div class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-accent/10 text-accent group-hover:bg-accent group-hover:text-white transition">
           <i class="fas fa-eye text-3xl"></i>
         </div>
-        <h3 class="mt-4 text-xl font-bold text-secondary dark:text-white">Progressive Lenses</h3>
-        <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Seamless vision at all distances. No visible lines.</p>
+        <h3 class="mt-4 font-medium text-secondary dark:text-white text-2xl sm:text-3xl">Progressive Lenses</h3>
+        <p class="mt-2 text-sm text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">Seamless vision at all distances. No visible lines.</p>
         <div class="mt-4 flex justify-center gap-2 text-xs">
           <span class="rounded-full bg-accent/10 px-3 py-1 text-accent">Digital HD</span>
           <span class="rounded-full bg-accent/10 px-3 py-1 text-accent">Custom Fit</span>
         </div>
       </div>
-      <div class="group rounded-2xl bg-white p-8 shadow-lg transition hover:shadow-2xl dark:bg-secondary/80 text-center">
+      <div class="group rounded-2xl bg-white p-8 shadow-lg transition hover:shadow-2xl dark:bg-darkGrey text-center">
         <div class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-accent/10 text-accent group-hover:bg-accent group-hover:text-white transition">
           <i class="fas fa-shield-virus text-3xl"></i>
         </div>
-        <h3 class="mt-4 text-xl font-bold text-secondary dark:text-white">Anti-Reflective</h3>
-        <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Reduce glare and reflections for clearer, sharper vision.</p>
+        <h3 class="mt-4 font-medium text-secondary dark:text-white text-2xl sm:text-3xl">Anti-Reflective</h3>
+        <p class="mt-2 text-sm text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">Reduce glare and reflections for clearer, sharper vision.</p>
         <div class="mt-4 flex justify-center gap-2 text-xs">
           <span class="rounded-full bg-accent/10 px-3 py-1 text-accent">100% Glare Free</span>
           <span class="rounded-full bg-accent/10 px-3 py-1 text-accent">Scratch Resistant</span>
         </div>
       </div>
-      <div class="group rounded-2xl bg-white p-8 shadow-lg transition hover:shadow-2xl dark:bg-secondary/80 text-center">
+      <div class="group rounded-2xl bg-white p-8 shadow-lg transition hover:shadow-2xl dark:bg-darkGrey text-center">
         <div class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-accent/10 text-accent group-hover:bg-accent group-hover:text-white transition">
           <i class="fas fa-water text-3xl"></i>
         </div>
-        <h3 class="mt-4 text-xl font-bold text-secondary dark:text-white">Polarized Lenses</h3>
-        <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Perfect for outdoor activities. Reduces glare from water, snow, and roads.</p>
+        <h3 class="mt-4 font-medium text-secondary dark:text-white text-2xl sm:text-3xl">Polarized Lenses</h3>
+        <p class="mt-2 text-sm text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">Perfect for outdoor activities. Reduces glare from water, snow, and roads.</p>
         <div class="mt-4 flex justify-center gap-2 text-xs">
           <span class="rounded-full bg-accent/10 px-3 py-1 text-accent">UV 400</span>
           <span class="rounded-full bg-accent/10 px-3 py-1 text-accent">Outdoor</span>
         </div>
       </div>
-      <div class="group rounded-2xl bg-white p-8 shadow-lg transition hover:shadow-2xl dark:bg-secondary/80 text-center">
+      <div class="group rounded-2xl bg-white p-8 shadow-lg transition hover:shadow-2xl dark:bg-darkGrey text-center">
         <div class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-accent/10 text-accent group-hover:bg-accent group-hover:text-white transition">
           <i class="fas fa-prescription-bottle text-3xl"></i>
         </div>
-        <h3 class="mt-4 text-xl font-bold text-secondary dark:text-white">Custom Prescription</h3>
-        <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Advanced lens customization for your unique prescription needs.</p>
+        <h3 class="mt-4 font-medium text-secondary dark:text-white text-2xl sm:text-3xl">Custom Prescription</h3>
+        <p class="mt-2 text-sm text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">Advanced lens customization for your unique prescription needs.</p>
         <div class="mt-4 flex justify-center gap-2 text-xs">
           <span class="rounded-full bg-accent/10 px-3 py-1 text-accent">Digital Design</span>
           <span class="rounded-full bg-accent/10 px-3 py-1 text-accent">High Index</span>
@@ -415,13 +415,13 @@
   </div>
 </section>
 <!-- ======== SPECIAL OFFERS - DEALS ======== -->
-<section class="bg-white dark:bg-secondary py-20" id="offers">
+<section class="bg-white dark:bg-secondary py-20 overflow-hidden" id="offers">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="grid gap-8 lg:grid-cols-3">
       <div class="lg:col-span-1">
-        <span class="inline-block text-sm font-semibold text-accent uppercase tracking-wider border-b-2 border-accent pb-1">Special Offers</span>
-        <h2 class="mt-4 text-4xl font-bold text-secondary dark:text-white">Great Deals on <span class="text-accent">Eyewear</span></h2>
-        <p class="mt-4 text-gray-500 dark:text-gray-400">Limited time offers on premium frames and lens packages</p>
+        <span class="inline-block text-sm font-medium text-accent uppercase tracking-wider border-b-2 border-accent pb-1">Special Offers</span>
+        <h2 class="mt-4 font-medium text-secondary dark:text-white text-3xl sm:text-4xl">Great Deals on <span class="text-accent">Eyewear</span></h2>
+        <p class="mt-4 text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">Limited time offers on premium frames and lens packages</p>
         <div class="mt-6 space-y-3">
           <div class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400">
             <i class="fas fa-check-circle text-accent"></i>
@@ -436,35 +436,35 @@
             <span>2-year warranty on all frames</span>
           </div>
         </div>
-        <a href="#" class="mt-8 inline-flex items-center rounded-full bg-accent px-8 py-3.5 font-semibold text-white shadow-lg shadow-accent/30 transition hover:bg-accent/90">View All Offers →</a>
+        <a href="#" class="mt-8 inline-flex items-center rounded-full bg-accent px-8 py-3.5 font-medium text-white shadow-lg shadow-accent/30 transition hover:bg-accent/90 dark:text-white">View All Offers →</a>
       </div>
       <div class="lg:col-span-2 grid gap-6 sm:grid-cols-2">
         <div class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-accent to-accent/80 p-8 text-white shadow-xl">
           <div class="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-white/20"></div>
           <div class="absolute -bottom-10 -left-10 h-40 w-40 rounded-full bg-white/10"></div>
           <div class="relative">
-            <span class="inline-block rounded-full bg-white/20 px-3 py-1 text-xs font-bold">Limited Time</span>
-            <h3 class="mt-3 text-2xl font-bold">Buy 1 Get 1 50% Off</h3>
+            <span class="inline-block rounded-full bg-white/20 px-3 py-1 text-xs font-medium">Limited Time</span>
+            <h3 class="mt-3 font-medium text-2xl sm:text-3xl">Buy 1 Get 1 50% Off</h3>
             <p class="mt-2 text-white/80">On all designer frames + lenses</p>
             <div class="mt-4 flex items-center gap-2">
-              <span class="text-3xl font-bold">50%</span>
+              <span class="text-3xl font-medium">50%</span>
               <span class="text-sm">off second pair</span>
             </div>
-            <a href="#" class="mt-4 inline-block rounded-full bg-white px-6 py-2 font-semibold text-accent transition hover:scale-105">Shop Now →</a>
+            <a href="#" class="mt-4 inline-block rounded-full bg-white px-6 py-2 font-medium text-accent transition hover:scale-105">Shop Now →</a>
           </div>
         </div>
         <div class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary to-primary/80 p-8 text-white shadow-xl">
           <div class="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-white/20"></div>
           <div class="absolute -bottom-10 -left-10 h-40 w-40 rounded-full bg-white/10"></div>
           <div class="relative">
-            <span class="inline-block rounded-full bg-white/20 px-3 py-1 text-xs font-bold">New Arrival</span>
-            <h3 class="mt-3 text-2xl font-bold">Premium Lens Package</h3>
+            <span class="inline-block rounded-full bg-white/20 px-3 py-1 text-xs font-medium">New Arrival</span>
+            <h3 class="mt-3 font-medium text-2xl sm:text-3xl">Premium Lens Package</h3>
             <p class="mt-2 text-white/80">Transition + Blue Light + Anti-Reflective</p>
             <div class="mt-4 flex items-center gap-2">
-              <span class="text-3xl font-bold">$199</span>
+              <span class="text-3xl font-medium">$199</span>
               <span class="text-sm line-through text-white/60">$299</span>
             </div>
-            <a href="#" class="mt-4 inline-block rounded-full bg-white px-6 py-2 font-semibold text-primary transition hover:scale-105">Shop Now →</a>
+            <a href="#" class="mt-4 inline-block rounded-full bg-white px-6 py-2 font-medium text-primary transition hover:scale-105">Shop Now →</a>
           </div>
         </div>
       </div>
@@ -472,46 +472,46 @@
   </div>
 </section>
 <!-- ======== CONTACT - EYEWEAR CONSULTATION ======== -->
-<section class="bg-gray-50 py-20 dark:bg-secondary" id="consultation">
+<section class="bg-gray-50 py-20 dark:bg-darkGrey overflow-hidden" id="consultation">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="grid items-center gap-12 lg:grid-cols-2">
       <div>
-        <span class="inline-block text-sm font-semibold text-accent uppercase tracking-wider">Need Help?</span>
-        <h2 class="mt-2 text-4xl font-bold text-secondary dark:text-white">Get a Free <span class="text-accent">Eyewear Consultation</span></h2>
-        <p class="mt-4 text-gray-500 dark:text-gray-400">Not sure which frames suit you? Our expert stylists are here to help you find the perfect pair.</p>
+        <span class="inline-block text-sm font-medium text-accent uppercase tracking-wider">Need Help?</span>
+        <h2 class="mt-2 font-medium text-secondary dark:text-white text-3xl sm:text-4xl">Get a Free <span class="text-accent">Eyewear Consultation</span></h2>
+        <p class="mt-4 text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">Not sure which frames suit you? Our expert stylists are here to help you find the perfect pair.</p>
         <div class="mt-8 space-y-4">
-          <div class="flex items-start gap-4 rounded-xl bg-white p-4 shadow-sm dark:bg-secondary/80">
+          <div class="flex items-start gap-4 rounded-xl bg-white p-4 shadow-sm dark:bg-darkGrey">
             <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent">
               <i class="fas fa-user text-lg"></i>
             </div>
             <div>
-              <div class="font-semibold text-secondary dark:text-white">Personal Stylist</div>
+              <div class="font-medium text-secondary dark:text-white">Personal Stylist</div>
               <div class="text-sm text-gray-500 dark:text-gray-400">Get personalized recommendations based on your face shape</div>
             </div>
           </div>
-          <div class="flex items-start gap-4 rounded-xl bg-white p-4 shadow-sm dark:bg-secondary/80">
+          <div class="flex items-start gap-4 rounded-xl bg-white p-4 shadow-sm dark:bg-darkGrey">
             <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent">
               <i class="fas fa-tshirt text-lg"></i>
             </div>
             <div>
-              <div class="font-semibold text-secondary dark:text-white">Virtual Try-On</div>
+              <div class="font-medium text-secondary dark:text-white">Virtual Try-On</div>
               <div class="text-sm text-gray-500 dark:text-gray-400">Try frames virtually using AI-powered technology</div>
             </div>
           </div>
-          <div class="flex items-start gap-4 rounded-xl bg-white p-4 shadow-sm dark:bg-secondary/80">
+          <div class="flex items-start gap-4 rounded-xl bg-white p-4 shadow-sm dark:bg-darkGrey">
             <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent">
               <i class="fas fa-truck text-lg"></i>
             </div>
             <div>
-              <div class="font-semibold text-secondary dark:text-white">Free Home Trial</div>
+              <div class="font-medium text-secondary dark:text-white">Free Home Trial</div>
               <div class="text-sm text-gray-500 dark:text-gray-400">Try 5 frames at home before making a decision</div>
             </div>
           </div>
         </div>
       </div>
-      <div class="rounded-3xl bg-white p-8 shadow-2xl dark:bg-secondary/80">
-        <h3 class="text-2xl font-bold text-secondary dark:text-white">Book Your Consultation</h3>
-        <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Fill in the details and we'll get back to you within 24 hours</p>
+      <div class="rounded-3xl bg-white p-8 shadow-2xl dark:bg-darkGrey">
+        <h3 class="font-medium text-secondary dark:text-white text-2xl sm:text-3xl">Book Your Consultation</h3>
+        <p class="mt-1 text-sm text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">Fill in the details and we'll get back to you within 24 hours</p>
         <form class="mt-6 space-y-4">
           <div>
             <label class="mb-1 block text-sm font-medium text-gray-600 dark:text-gray-300">Full Name</label>
@@ -535,8 +535,8 @@
               <option>Not Sure</option>
             </select>
           </div>
-          <button type="submit" class="w-full rounded-xl bg-accent py-3.5 font-semibold text-white transition hover:bg-accent/90">
-            <i class="fas fa-calendar-check mr-2"></i> Schedule Consultation
+          <button type="submit" class="w-full rounded-xl bg-accent py-3.5 font-medium text-white transition hover:bg-accent/90 dark:text-white">
+            <i class="fas fa-calendar-check me-2"></i> Schedule Consultation
           </button>
         </form>
       </div>
@@ -555,7 +555,7 @@
               <i class="fas fa-eye text-lg"></i>
             </span>
             <div class="leading-tight">
-              <span class="block text-xl font-bold tracking-tight text-accent">OptiCare</span>
+              <span class="block text-xl font-medium tracking-tight text-accent">OptiCare</span>
             </div>
           </a>
           <p class="text-gray-400 mb-6">Caring for your eyes with precision and style. Premium eyewear and comprehensive eye care.</p>
@@ -566,7 +566,7 @@
           </div>
         </div>
         <div>
-          <h4 class="text-white font-bold mb-6 uppercase tracking-wider text-sm">Quick links</h4>
+          <h4 class="text-white font-medium mb-6 uppercase tracking-wider text-xl sm:text-2xl">Quick links</h4>
           <ul class="space-y-3 text-sm">
             <li><a href="index.html" class="block hover:text-accent transition-colors">Home</a></li>
             <li><a href="#eyewear" class="block hover:text-accent transition-colors">Eyewear</a></li>
@@ -578,7 +578,7 @@
           </ul>
         </div>
         <div>
-          <h4 class="text-lg font-bold mb-6">Visit us</h4>
+          <h4 class="font-medium mb-6 text-xl sm:text-2xl">Visit us</h4>
           <div class="space-y-4">
             <div class="flex items-center gap-3">
               <div class="h-10 w-10 rounded-full bg-accent/10 flex items-center justify-center">
@@ -601,15 +601,15 @@
           </div>
         </div>
         <div>
-          <h4 class="text-lg font-bold mb-6">Eye health tips</h4>
+          <h4 class="font-medium mb-6 text-xl sm:text-2xl">Eye health tips</h4>
           <p class="text-gray-400 mb-4">Get the latest on eye care and frame trends.</p>
           <form class="space-y-4">
             <input type="email" placeholder="Email address" class="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 focus:border-accent focus:outline-none text-white">
-            <button type="submit" class="w-full bg-accent text-white font-bold py-3 rounded-lg hover:opacity-90 transition-colors">Subscribe</button>
+            <button type="submit" class="w-full bg-accent text-white font-medium py-3 rounded-lg hover:opacity-90 transition-colors hover:bg-accent/90 dark:text-white">Subscribe</button>
           </form>
         </div>
       </div>
-      <div class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500 text-sm">
+      <div class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500 text-sm dark:text-gray-400">
         <div>© 2026 OptiCare Optical & Eye Care. All rights reserved.</div>
         <div class="flex gap-6">
           <a href="#" class="hover:text-accent transition-colors">Privacy Policy</a>
@@ -690,7 +690,7 @@
             }
           } else {
             // Desktop active link
-            link.classList.add('bg-accent', 'text-white', 'shadow-sm', 'font-bold');
+            link.classList.add('bg-accent', 'text-white', 'shadow-sm', 'font-medium');
             link.classList.remove('hover:text-primary', 'dark:hover:text-accent');
           }
         } else {
@@ -705,7 +705,7 @@
                    icon.classList.add('text-accent');
                 }
              } else {
-                link.classList.remove('bg-accent', 'text-white', 'shadow-sm', 'font-bold');
+                link.classList.remove('bg-accent', 'text-white', 'shadow-sm', 'font-medium');
              }
           }
         }
@@ -715,10 +715,10 @@
       const desktopHome = document.querySelector('.home-trigger');
       if (desktopHome) {
         if (!isHome) {
-          desktopHome.classList.remove('bg-accent', 'text-white', 'shadow-sm', 'font-bold');
+          desktopHome.classList.remove('bg-accent', 'text-white', 'shadow-sm', 'font-medium');
           desktopHome.classList.add('hover:text-primary', 'dark:hover:text-accent');
         } else {
-          desktopHome.classList.add('bg-accent', 'text-white', 'shadow-sm', 'font-bold');
+          desktopHome.classList.add('bg-accent', 'text-white', 'shadow-sm', 'font-medium');
           desktopHome.classList.remove('hover:text-primary', 'dark:hover:text-accent');
         }
       }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OptiCare | Create Account</title>
-    <link rel="icon" href="assets/logo.png" type="image/jpeg">
+    <link rel="icon" href="assets/logo.png" type="image/png">
     <meta name="description" content="Join OptiCare - Optical Store & Eye Care Center">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
@@ -114,15 +114,7 @@
 
 <body class="bg-white text-secondary dark:bg-secondary dark:text-gray-100 transition-colors duration-300">
 
-    <div class="controls">
-        <button onclick="toggleRTL()" class="btn-control" title="Toggle RTL">
-            <i class="fas fa-exchange-alt"></i>
-        </button>
-        <button onclick="toggleTheme()" class="btn-control" title="Toggle Dark Mode">
-            <i class="fas fa-moon dark:hidden"></i>
-            <i class="fas fa-sun hidden dark:inline-block"></i>
-        </button>
-    </div>
+
 
     <div class="relative w-full max-w-5xl">
         <div
@@ -146,12 +138,12 @@
                             <i class="fas fa-eye text-lg"></i>
                         </span>
                         <div class="leading-tight">
-                            <span class="block text-xl font-bold tracking-tight text-accent">OptiCare</span>
+                            <span class="block text-xl font-medium tracking-tight text-accent">OptiCare</span>
                         </div>
                     </a>
 
                     <div class="mt-12">
-                        <h2 class="text-3xl font-bold text-white leading-tight mb-4">
+                        <h2 class="font-medium text-white leading-tight mb-4 text-3xl sm:text-4xl">
                             Start Your<br>Vision Journey<br>Today
                         </h2>
                         <p class="text-white/80 text-sm">
@@ -172,7 +164,7 @@
 
             <!-- Right Side - Sign Up Form -->
             <div class="w-full md:w-7/12 flex items-center justify-center p-2 sm:p-4 lg:p-6">
-                <div class="w-full max-w-md">
+                <div class="w-full max-w-sm">
 
                     <!-- Mobile Logo -->
                     <div class="md:hidden text-center mb-8 mt-4">
@@ -181,16 +173,16 @@
                                 <i class="fas fa-eye text-lg"></i>
                             </span>
                             <div class="leading-tight">
-                                <span class="block text-xl font-bold tracking-tight text-accent">OptiCare</span>
+                                <span class="block text-xl font-medium tracking-tight text-accent">OptiCare</span>
                             </div>
                         </a>
                     </div>
 
-                    <div class="mb-3 text-center">
-                        <h3 class="text-xl font-bold text-secondary dark:text-white mb-0.5">
+                    <div class="mb-8 text-center">
+                        <h3 class="font-medium text-secondary dark:text-white mb-2 text-2xl sm:text-3xl">
                             Create Account
                         </h3>
-                        <p class="text-[11px] text-gray-500 dark:text-gray-400">
+                        <p class="text-[13px] text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">
                             Join OptiCare and start your vision journey
                         </p>
                     </div>
@@ -225,7 +217,7 @@
 
                     <div class="flex items-center gap-3 mb-6">
                         <div class="flex-1 h-px bg-gray-200 dark:bg-white/10"></div>
-                        <span class="text-[10px] font-bold uppercase text-gray-400 dark:text-gray-500">OR SIGN UP WITH
+                        <span class="text-[10px] font-medium uppercase text-gray-400 dark:text-gray-500">OR SIGN UP WITH
                             EMAIL</span>
                         <div class="flex-1 h-px bg-gray-200 dark:bg-white/10"></div>
                     </div>
@@ -234,7 +226,7 @@
                     <form class="space-y-4" onsubmit="event.preventDefault(); handleSignup();">
                         <div>
                             <label
-                                class="block text-[11px] font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-1.5">
+                                class="block text-[11px] font-medium uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-1.5">
                                 Last Name
                             </label>
                             <input type="text" id="firstName" required
@@ -245,7 +237,7 @@
 
                         <div>
                             <label
-                                class="block text-[11px] font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-1.5">
+                                class="block text-[11px] font-medium uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-1.5">
                                 Email Address
                             </label>
                             <input type="email" id="signupEmail" required
@@ -255,15 +247,15 @@
 
                         <div>
                             <label
-                                class="block text-[11px] font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-1.5">
+                                class="block text-[11px] font-medium uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-1.5">
                                 Password
                             </label>
                             <div class="relative">
                                 <input type="password" id="signup-password" required
-                                    class="input-field w-full px-4 py-2.5 rounded-xl text-sm outline-none focus:ring-2 focus:ring-accent/50 transition pr-10 border border-gray-200 dark:border-white/10 bg-white dark:bg-secondary text-secondary dark:text-white"
+                                    class="input-field w-full px-4 py-2.5 rounded-xl text-sm outline-none focus:ring-2 focus:ring-accent/50 transition pe-10 border border-gray-200 dark:border-white/10 bg-white dark:bg-secondary text-secondary dark:text-white"
                                     placeholder="••••••••">
                                 <button type="button" onclick="togglePasswordVisibility('signup-password', this)"
-                                    class="absolute inset-y-0 right-0 pr-3 flex items-center text-gray-400 hover:text-gray-600 dark:text-gray-500">
+                                    class="absolute inset-y-0 end-0 pe-3 flex items-center text-gray-400 hover:text-gray-600 dark:text-gray-500">
                                     <i class="far fa-eye text-xs"></i>
                                 </button>
                             </div>
@@ -271,16 +263,16 @@
 
                         <div>
                             <label
-                                class="block text-[11px] font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-1.5">
+                                class="block text-[11px] font-medium uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-1.5">
                                 Confirm Password
                             </label>
                             <div class="relative">
                                 <input type="password" id="signup-confirm-password" required
-                                    class="input-field w-full px-4 py-2.5 rounded-xl text-sm outline-none focus:ring-2 focus:ring-accent/50 transition pr-10 border border-gray-200 dark:border-white/10 bg-white dark:bg-secondary text-secondary dark:text-white"
+                                    class="input-field w-full px-4 py-2.5 rounded-xl text-sm outline-none focus:ring-2 focus:ring-accent/50 transition pe-10 border border-gray-200 dark:border-white/10 bg-white dark:bg-secondary text-secondary dark:text-white"
                                     placeholder="••••••••">
                                 <button type="button"
                                     onclick="togglePasswordVisibility('signup-confirm-password', this)"
-                                    class="absolute inset-y-0 right-0 pr-3 flex items-center text-gray-400 hover:text-gray-600 dark:text-gray-500">
+                                    class="absolute inset-y-0 end-0 pe-3 flex items-center text-gray-400 hover:text-gray-600 dark:text-gray-500">
                                     <i class="far fa-eye text-xs"></i>
                                 </button>
                             </div>
@@ -296,14 +288,14 @@
                         </div>
 
                         <button type="submit"
-                            class="btn-primary w-full py-3 rounded-xl text-white font-bold text-sm shadow-lg shadow-accent/20 hover:opacity-90 transition-transform active:scale-95">
+                            class="btn-primary w-full py-3 rounded-xl text-white font-medium text-sm shadow-lg shadow-accent/20 hover:opacity-90 transition-transform active:scale-95">
                             Create Account
                         </button>
                     </form>
 
-                    <p class="text-[10px] mt-3 text-center text-gray-500 dark:text-gray-400">
+                    <p class="text-[10px] mt-3 text-center text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">
                         Already have an account?
-                        <a href="login.html" class="text-accent font-bold hover:underline">Login here</a>
+                        <a href="login.html" class="text-accent font-medium hover:underline">Login here</a>
                     </p>
                 </div>
             </div>
@@ -400,7 +392,7 @@
             }
           } else {
             // Desktop active link
-            link.classList.add('bg-accent', 'text-white', 'shadow-sm', 'font-bold');
+            link.classList.add('bg-accent', 'text-white', 'shadow-sm', 'font-medium');
             link.classList.remove('hover:text-primary', 'dark:hover:text-accent');
           }
         } else {
@@ -415,7 +407,7 @@
                    icon.classList.add('text-accent');
                 }
              } else {
-                link.classList.remove('bg-accent', 'text-white', 'shadow-sm', 'font-bold');
+                link.classList.remove('bg-accent', 'text-white', 'shadow-sm', 'font-medium');
              }
           }
         }
@@ -425,10 +417,10 @@
       const desktopHome = document.querySelector('.home-trigger');
       if (desktopHome) {
         if (!isHome) {
-          desktopHome.classList.remove('bg-accent', 'text-white', 'shadow-sm', 'font-bold');
+          desktopHome.classList.remove('bg-accent', 'text-white', 'shadow-sm', 'font-medium');
           desktopHome.classList.add('hover:text-primary', 'dark:hover:text-accent');
         } else {
-          desktopHome.classList.add('bg-accent', 'text-white', 'shadow-sm', 'font-bold');
+          desktopHome.classList.add('bg-accent', 'text-white', 'shadow-sm', 'font-medium');
           desktopHome.classList.remove('hover:text-primary', 'dark:hover:text-accent');
         }
       }
